@@ -14,6 +14,7 @@
 		22F496AC1BA3110600EE5EBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F496AA1BA3110600EE5EBA /* LaunchScreen.xib */; };
 		22F496B81BA3110600EE5EBA /* Polyglot_Example_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F496B71BA3110600EE5EBA /* Polyglot_Example_iOSTests.swift */; };
 		22F496C21BA311C300EE5EBA /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F496C11BA311C300EE5EBA /* Polyglot.framework */; };
+		22F496C81BA3235D00EE5EBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22F496C71BA3235D00EE5EBA /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		22F496B61BA3110600EE5EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22F496B71BA3110600EE5EBA /* Polyglot_Example_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyglot_Example_iOSTests.swift; sourceTree = "<group>"; };
 		22F496C11BA311C300EE5EBA /* Polyglot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Polyglot.framework; path = "../../../Library/Developer/Xcode/DerivedData/Polyglot-fmyvkpnkrpxqzwdevhfphjtzbbrx/Build/Products/Debug-iphoneos/Polyglot.framework"; sourceTree = "<group>"; };
+		22F496C71BA3235D00EE5EBA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				22F496A51BA3110600EE5EBA /* Main.storyboard */,
 				22F496A81BA3110600EE5EBA /* Images.xcassets */,
 				22F496AA1BA3110600EE5EBA /* LaunchScreen.xib */,
+				22F496C71BA3235D00EE5EBA /* Localizable.strings */,
 				22F4969F1BA3110600EE5EBA /* Supporting Files */,
 			);
 			path = Source;
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F496A71BA3110600EE5EBA /* Main.storyboard in Resources */,
+				22F496C81BA3235D00EE5EBA /* Localizable.strings in Resources */,
 				22F496AC1BA3110600EE5EBA /* LaunchScreen.xib in Resources */,
 				22F496A91BA3110600EE5EBA /* Images.xcassets in Resources */,
 			);
