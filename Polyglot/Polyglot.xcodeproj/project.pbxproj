@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		22C288811BA2D4590004AED4 /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C288761BA2D4590004AED4 /* Polyglot.framework */; };
-		22F4968C1BA2DB0900EE5EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F4968B1BA2DB0900EE5EBA /* Info.plist */; };
 		22F496911BA2DC0F00EE5EBA /* PolyglotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */; };
 		22F496921BA2DC1E00EE5EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F4968F1BA2DB3800EE5EBA /* Info.plist */; };
 /* End PBXBuildFile section */
@@ -73,8 +72,7 @@
 			children = (
 				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
 			);
-			name = Source;
-			path = Polyglot;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		22C2884E1BA2D01C0004AED4 /* Supporting Files */ = {
@@ -91,8 +89,7 @@
 				22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */,
 				22C288641BA2D01C0004AED4 /* Supporting Files */,
 			);
-			name = Tests;
-			path = PolyglotTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 		22C288641BA2D01C0004AED4 /* Supporting Files */ = {
@@ -194,7 +191,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22F4968C1BA2DB0900EE5EBA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
