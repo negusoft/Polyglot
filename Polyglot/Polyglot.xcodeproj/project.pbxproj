@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22C288811BA2D4590004AED4 /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C288761BA2D4590004AED4 /* Polyglot.framework */; };
+		22F4968C1BA2DB0900EE5EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F4968B1BA2DB0900EE5EBA /* Info.plist */; };
+		22F496911BA2DC0F00EE5EBA /* PolyglotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */; };
+		22F496921BA2DC1E00EE5EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F4968F1BA2DB3800EE5EBA /* Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22C288821BA2D4590004AED4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22C288431BA2D01C0004AED4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22C288751BA2D4590004AED4;
+			remoteInfo = "Polyglot iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22C288761BA2D4590004AED4 /* Polyglot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyglot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C288801BA2D4590004AED4 /* Polyglot iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polyglot iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22F4968B1BA2DB0900EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
+		22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolyglotTests.swift; path = Tests/PolyglotTests.swift; sourceTree = SOURCE_ROOT; };
+		22F4968F1BA2DB3800EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22C288721BA2D4590004AED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C2887D1BA2D4590004AED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C288811BA2D4590004AED4 /* Polyglot.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22C288421BA2D01C0004AED4 = {
+			isa = PBXGroup;
+			children = (
+				22C2884D1BA2D01C0004AED4 /* Source */,
+				22C288631BA2D01C0004AED4 /* Tests */,
+				22C2884C1BA2D01C0004AED4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22C2884C1BA2D01C0004AED4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22C288761BA2D4590004AED4 /* Polyglot.framework */,
+				22C288801BA2D4590004AED4 /* Polyglot iOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22C2884D1BA2D01C0004AED4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
+			);
+			name = Source;
+			path = Polyglot;
+			sourceTree = "<group>";
+		};
+		22C2884E1BA2D01C0004AED4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22F4968B1BA2DB0900EE5EBA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22C288631BA2D01C0004AED4 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */,
+				22C288641BA2D01C0004AED4 /* Supporting Files */,
+			);
+			name = Tests;
+			path = PolyglotTests;
+			sourceTree = "<group>";
+		};
+		22C288641BA2D01C0004AED4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22F4968F1BA2DB3800EE5EBA /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22C288731BA2D4590004AED4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22C288751BA2D4590004AED4 /* Polyglot iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C288891BA2D4590004AED4 /* Build configuration list for PBXNativeTarget "Polyglot iOS" */;
+			buildPhases = (
+				22C288711BA2D4590004AED4 /* Sources */,
+				22C288721BA2D4590004AED4 /* Frameworks */,
+				22C288731BA2D4590004AED4 /* Headers */,
+				22C288741BA2D4590004AED4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Polyglot iOS";
+			productName = "Polyglot iOS";
+			productReference = 22C288761BA2D4590004AED4 /* Polyglot.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		22C2887F1BA2D4590004AED4 /* Polyglot iOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C2888C1BA2D4590004AED4 /* Build configuration list for PBXNativeTarget "Polyglot iOS Tests" */;
+			buildPhases = (
+				22C2887C1BA2D4590004AED4 /* Sources */,
+				22C2887D1BA2D4590004AED4 /* Frameworks */,
+				22C2887E1BA2D4590004AED4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22C288831BA2D4590004AED4 /* PBXTargetDependency */,
+			);
+			name = "Polyglot iOS Tests";
+			productName = "Polyglot iOSTests";
+			productReference = 22C288801BA2D4590004AED4 /* Polyglot iOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22C288431BA2D01C0004AED4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "NEGU Soft";
+				TargetAttributes = {
+					22C288751BA2D4590004AED4 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 7J7VFMUW63;
+					};
+					22C2887F1BA2D4590004AED4 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 22C288461BA2D01C0004AED4 /* Build configuration list for PBXProject "Polyglot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22C288421BA2D01C0004AED4;
+			productRefGroup = 22C2884C1BA2D01C0004AED4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22C288751BA2D4590004AED4 /* Polyglot iOS */,
+				22C2887F1BA2D4590004AED4 /* Polyglot iOS Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22C288741BA2D4590004AED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F4968C1BA2DB0900EE5EBA /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C2887E1BA2D4590004AED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F496921BA2DC1E00EE5EBA /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22C288711BA2D4590004AED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C2887C1BA2D4590004AED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F496911BA2DC0F00EE5EBA /* PolyglotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22C288831BA2D4590004AED4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22C288751BA2D4590004AED4 /* Polyglot iOS */;
+			targetProxy = 22C288821BA2D4590004AED4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22C288681BA2D01C0004AED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22C288691BA2D01C0004AED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22C2888A1BA2D4590004AED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Polyglot;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22C2888B1BA2D4590004AED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = Polyglot;
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22C2888D1BA2D4590004AED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22C2888E1BA2D4590004AED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22C288461BA2D01C0004AED4 /* Build configuration list for PBXProject "Polyglot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C288681BA2D01C0004AED4 /* Debug */,
+				22C288691BA2D01C0004AED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C288891BA2D4590004AED4 /* Build configuration list for PBXNativeTarget "Polyglot iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C2888A1BA2D4590004AED4 /* Debug */,
+				22C2888B1BA2D4590004AED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C2888C1BA2D4590004AED4 /* Build configuration list for PBXNativeTarget "Polyglot iOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C2888D1BA2D4590004AED4 /* Debug */,
+				22C2888E1BA2D4590004AED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22C288431BA2D01C0004AED4 /* Project object */;
+}
