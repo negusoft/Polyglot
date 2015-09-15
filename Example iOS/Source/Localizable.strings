@@ -1,2 +1,6 @@
 "example_label_text" = "Hello UILabel";
 "example_button_text" = "Hello UIButton";
+
+"example_segment_one" = "One";
+"example_segment_two" = "Two";
+"example_segment_three" = "Three";
