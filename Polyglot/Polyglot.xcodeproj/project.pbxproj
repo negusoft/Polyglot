@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		22C288811BA2D4590004AED4 /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C288761BA2D4590004AED4 /* Polyglot.framework */; };
+		22E71C361BA80657000B39D3 /* UIButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */; };
 		22F496911BA2DC0F00EE5EBA /* PolyglotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */; };
 		22F496921BA2DC1E00EE5EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F4968F1BA2DB3800EE5EBA /* Info.plist */; };
 		22F496C41BA3195A00EE5EBA /* UILabel+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F496C31BA3195A00EE5EBA /* UILabel+Polyglot.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		22C288761BA2D4590004AED4 /* Polyglot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyglot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C288801BA2D4590004AED4 /* Polyglot iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polyglot iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Polyglot.swift"; sourceTree = "<group>"; };
 		22F4968B1BA2DB0900EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
 		22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolyglotTests.swift; path = Tests/PolyglotTests.swift; sourceTree = SOURCE_ROOT; };
 		22F4968F1BA2DB3800EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				22F496C31BA3195A00EE5EBA /* UILabel+Polyglot.swift */,
+				22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */,
 				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
 			);
 			path = Source;
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F496C41BA3195A00EE5EBA /* UILabel+Polyglot.swift in Sources */,
+				22E71C361BA80657000B39D3 /* UIButton+Polyglot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

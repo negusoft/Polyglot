@@ -1,1 +1,2 @@
-"example_label_text" = "Hello world";
+"example_label_text" = "Hello UILabel";
+"example_button_text" = "Hello UIButton";
