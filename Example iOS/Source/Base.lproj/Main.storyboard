@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,15 +26,6 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="textStringKey" value="example_label_text"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87g-iW-1i8">
-                                <rect key="frame" x="227" y="327" width="145" height="30"/>
-                                <state key="normal" title="This will be overriden">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="titleStringKey" value="example_button_text"/>
-                                </userDefinedRuntimeAttributes>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-0G-0cS">
                                 <rect key="frame" x="208" y="246" width="185" height="29"/>
                                 <segments>
@@ -45,16 +37,42 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleKeysCSV" value="example_segment_one, example_segment_two, example_segment_three"/>
                                 </userDefinedRuntimeAttributes>
                             </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-yw-Znf">
+                                <rect key="frame" x="32" y="326.5" width="536" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="example_textfield_placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87g-iW-1i8">
+                                <rect key="frame" x="228" y="372.5" width="145" height="30"/>
+                                <state key="normal" title="This will be overriden">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleStringKey" value="example_button_text"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="87g-iW-1i8" secondAttribute="centerX" id="TAR-mt-ZRs"/>
+                            <constraint firstItem="87g-iW-1i8" firstAttribute="top" secondItem="cxm-yw-Znf" secondAttribute="bottom" constant="16" id="ZYV-Nh-ATb"/>
                             <constraint firstAttribute="centerY" secondItem="vou-yF-qwS" secondAttribute="centerY" id="aDD-mf-WiD"/>
                             <constraint firstItem="vou-yF-qwS" firstAttribute="top" secondItem="RxM-0G-0cS" secondAttribute="bottom" constant="16" id="chb-sC-pVL"/>
-                            <constraint firstItem="87g-iW-1i8" firstAttribute="top" secondItem="vou-yF-qwS" secondAttribute="bottom" constant="16" id="iva-FV-J8P"/>
+                            <constraint firstItem="cxm-yw-Znf" firstAttribute="top" secondItem="vou-yF-qwS" secondAttribute="bottom" constant="16" id="gE7-Dp-t9k"/>
+                            <constraint firstAttribute="centerX" secondItem="cxm-yw-Znf" secondAttribute="centerX" constant="0.5" id="hEf-Th-vYK"/>
+                            <constraint firstItem="cxm-yw-Znf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="hqG-dC-X4I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cxm-yw-Znf" secondAttribute="trailing" constant="16" id="jUb-Nm-XWc"/>
                             <constraint firstAttribute="centerX" secondItem="RxM-0G-0cS" secondAttribute="centerX" constant="-0.5" id="poY-21-hOf"/>
                             <constraint firstAttribute="centerX" secondItem="vou-yF-qwS" secondAttribute="centerX" id="yb9-0p-FRj"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="hEf-Th-vYK"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
