@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		225FD6941BA98D86006AAF6F /* UITextView+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD6931BA98D86006AAF6F /* UITextView+Polyglot.swift */; };
 		22C288811BA2D4590004AED4 /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C288761BA2D4590004AED4 /* Polyglot.framework */; };
 		22E71C361BA80657000B39D3 /* UIButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */; };
 		22E71C381BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C371BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		225FD6931BA98D86006AAF6F /* UITextView+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Polyglot.swift"; sourceTree = "<group>"; };
 		22C288761BA2D4590004AED4 /* Polyglot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyglot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C288801BA2D4590004AED4 /* Polyglot iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polyglot iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Polyglot.swift"; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */,
 				22E71C371BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift */,
 				22E71C391BA815AF000B39D3 /* UITextField+Polyglot.swift */,
+				225FD6931BA98D86006AAF6F /* UITextView+Polyglot.swift */,
 				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
 			);
 			path = Source;
@@ -225,6 +228,7 @@
 				22E71C3A1BA815AF000B39D3 /* UITextField+Polyglot.swift in Sources */,
 				22E71C381BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift in Sources */,
 				22E71C361BA80657000B39D3 /* UIButton+Polyglot.swift in Sources */,
+				225FD6941BA98D86006AAF6F /* UITextView+Polyglot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

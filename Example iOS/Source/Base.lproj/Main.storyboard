@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-0G-0cS">
-                                <rect key="frame" x="208" y="246" width="185" height="29"/>
+                                <rect key="frame" x="208" y="36" width="185" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -29,7 +29,7 @@
                                 </userDefinedRuntimeAttributes>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text will be overriden" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vou-yF-qwS">
-                                <rect key="frame" x="202" y="290" width="195.5" height="20.5"/>
+                                <rect key="frame" x="202" y="80" width="195.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -38,7 +38,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-yw-Znf">
-                                <rect key="frame" x="32" y="326.5" width="536" height="30"/>
+                                <rect key="frame" x="32" y="116.5" width="536" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -46,7 +46,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87g-iW-1i8">
-                                <rect key="frame" x="228" y="372.5" width="145" height="30"/>
+                                <rect key="frame" x="228" y="162.5" width="145" height="30"/>
                                 <state key="normal" title="This will be overriden">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -54,13 +54,30 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="example_button_text"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCj-Js-Oy9">
+                                <rect key="frame" x="16" y="206" width="568" height="79"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="79" id="cK2-al-6Mm"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="example_textview_text"/>
+                                </userDefinedRuntimeAttributes>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nCj-Js-Oy9" firstAttribute="top" secondItem="87g-iW-1i8" secondAttribute="bottom" constant="13.5" id="2SE-0O-f1v"/>
+                            <constraint firstItem="RxM-0G-0cS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="SOM-Gd-O79"/>
                             <constraint firstAttribute="centerX" secondItem="87g-iW-1i8" secondAttribute="centerX" id="TAR-mt-ZRs"/>
                             <constraint firstItem="87g-iW-1i8" firstAttribute="top" secondItem="cxm-yw-Znf" secondAttribute="bottom" constant="16" id="ZYV-Nh-ATb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nCj-Js-Oy9" secondAttribute="trailing" id="ZeA-o9-nR8"/>
                             <constraint firstAttribute="centerY" secondItem="vou-yF-qwS" secondAttribute="centerY" id="aDD-mf-WiD"/>
                             <constraint firstItem="vou-yF-qwS" firstAttribute="top" secondItem="RxM-0G-0cS" secondAttribute="bottom" constant="16" id="chb-sC-pVL"/>
+                            <constraint firstItem="nCj-Js-Oy9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="dLE-Pc-4ZV"/>
                             <constraint firstItem="cxm-yw-Znf" firstAttribute="top" secondItem="vou-yF-qwS" secondAttribute="bottom" constant="16" id="gE7-Dp-t9k"/>
                             <constraint firstAttribute="centerX" secondItem="cxm-yw-Znf" secondAttribute="centerX" constant="0.5" id="hEf-Th-vYK"/>
                             <constraint firstItem="cxm-yw-Znf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="16" id="hqG-dC-X4I"/>
@@ -71,6 +88,7 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="hEf-Th-vYK"/>
+                                <exclude reference="aDD-mf-WiD"/>
                             </mask>
                         </variation>
                     </view>
