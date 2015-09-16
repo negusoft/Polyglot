@@ -25,7 +25,7 @@ import UIKit
 public extension UIButton {
     
     @IBInspectable
-    var titleStringKey: String {
+    var titleKey: String {
         get { return "" }
         set {
             self.setTitle(NSLocalizedString(newValue, comment:newValue), forState: .Normal)

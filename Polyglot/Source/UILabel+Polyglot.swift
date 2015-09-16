@@ -25,7 +25,7 @@ import UIKit
 public extension UILabel {
     
     @IBInspectable
-    var textStringKey: String {
+    var textKey: String {
         get { return "" }
         set {
             self.text = NSLocalizedString(newValue, comment:newValue)
