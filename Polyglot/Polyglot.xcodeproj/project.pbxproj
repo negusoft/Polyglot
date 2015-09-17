@@ -12,6 +12,7 @@
 		22E71C361BA80657000B39D3 /* UIButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */; };
 		22E71C381BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C371BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift */; };
 		22E71C3A1BA815AF000B39D3 /* UITextField+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C391BA815AF000B39D3 /* UITextField+Polyglot.swift */; };
+		22E990441BAAF9E40084D941 /* UIBarItem+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E990431BAAF9E40084D941 /* UIBarItem+Polyglot.swift */; };
 		22F496911BA2DC0F00EE5EBA /* PolyglotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */; };
 		22F496921BA2DC1E00EE5EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F4968F1BA2DB3800EE5EBA /* Info.plist */; };
 		22F496C41BA3195A00EE5EBA /* UILabel+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F496C31BA3195A00EE5EBA /* UILabel+Polyglot.swift */; };
@@ -34,6 +35,7 @@
 		22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Polyglot.swift"; sourceTree = "<group>"; };
 		22E71C371BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Polyglot.swift"; sourceTree = "<group>"; };
 		22E71C391BA815AF000B39D3 /* UITextField+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Polyglot.swift"; sourceTree = "<group>"; };
+		22E990431BAAF9E40084D941 /* UIBarItem+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarItem+Polyglot.swift"; sourceTree = "<group>"; };
 		22F4968B1BA2DB0900EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
 		22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolyglotTests.swift; path = Tests/PolyglotTests.swift; sourceTree = SOURCE_ROOT; };
 		22F4968F1BA2DB3800EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -85,6 +87,7 @@
 				22E71C371BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift */,
 				22E71C391BA815AF000B39D3 /* UITextField+Polyglot.swift */,
 				225FD6931BA98D86006AAF6F /* UITextView+Polyglot.swift */,
+				22E990431BAAF9E40084D941 /* UIBarItem+Polyglot.swift */,
 				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
 			);
 			path = Source;
@@ -226,6 +229,7 @@
 			files = (
 				22F496C41BA3195A00EE5EBA /* UILabel+Polyglot.swift in Sources */,
 				22E71C3A1BA815AF000B39D3 /* UITextField+Polyglot.swift in Sources */,
+				22E990441BAAF9E40084D941 /* UIBarItem+Polyglot.swift in Sources */,
 				22E71C381BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift in Sources */,
 				22E71C361BA80657000B39D3 /* UIButton+Polyglot.swift in Sources */,
 				225FD6941BA98D86006AAF6F /* UITextView+Polyglot.swift in Sources */,
