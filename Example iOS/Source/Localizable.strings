@@ -9,3 +9,7 @@
 
 "tab_one" = "One";
 "tab_two" = "Two";
+
+"navigation_title" = "Title";
+"navigation_prompt" = "Prompt";
+"navigation_back" = "Back";

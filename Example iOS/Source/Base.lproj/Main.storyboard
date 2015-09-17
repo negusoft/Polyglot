@@ -39,7 +39,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="EKS-DB-yR8"/>
+                        <segue destination="fsI-Jj-7Kn" kind="relationship" relationship="viewControllers" id="EKS-DB-yR8"/>
                         <segue destination="h03-w8-qV6" kind="relationship" relationship="viewControllers" id="B23-Ha-pxV"/>
                     </connections>
                 </tabBarController>
@@ -47,7 +47,7 @@
             </objects>
             <point key="canvasLocation" x="-547" y="478"/>
         </scene>
-        <!--first-->
+        <!--tiiitle-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example_iOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-0G-0cS">
-                                <rect key="frame" x="208" y="36" width="185" height="29"/>
+                                <rect key="frame" x="208" y="110" width="185" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -71,7 +71,7 @@
                                 </userDefinedRuntimeAttributes>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This text will be overriden" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vou-yF-qwS">
-                                <rect key="frame" x="202" y="80" width="195.5" height="20.5"/>
+                                <rect key="frame" x="202" y="154" width="195.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-yw-Znf">
-                                <rect key="frame" x="32" y="116.5" width="536" height="30"/>
+                                <rect key="frame" x="32" y="190.5" width="536" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
@@ -88,16 +88,19 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87g-iW-1i8">
-                                <rect key="frame" x="228" y="162.5" width="145" height="30"/>
+                                <rect key="frame" x="228" y="236.5" width="145" height="30"/>
                                 <state key="normal" title="This will be overriden">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="example_button_text"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="LGr-Cu-eAY" kind="show" id="vt2-Vz-rjq"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCj-Js-Oy9">
-                                <rect key="frame" x="16" y="206" width="568" height="79"/>
+                                <rect key="frame" x="16" y="280" width="568" height="79"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="cK2-al-6Mm"/>
@@ -134,13 +137,56 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="tiiitle" prompt="asdf" id="dqB-Qz-sea">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="navigation_title"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="promptKey" value="navigation_prompt"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="backButtonKey" value="navigation_back"/>
+                        </userDefinedRuntimeAttributes>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="131"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uV6-2K-PMa">
+            <objects>
+                <viewController id="LGr-Cu-eAY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GQW-Il-Jwu"/>
+                        <viewControllerLayoutGuide type="bottom" id="iBe-y3-Wc6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xfg-ki-mrI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HEL-WW-oLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="131"/>
+        </scene>
+        <!--first-->
+        <scene sceneID="BcN-YR-Wqf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fsI-Jj-7Kn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="first" id="tac-HB-Ldm">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="tab_one"/>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fxQ-go-7bc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FCy-c3-pQI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rmd-iL-6s7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="233" y="131"/>
         </scene>
