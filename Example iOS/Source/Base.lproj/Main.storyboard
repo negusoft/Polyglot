@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fHN-0K-hy2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fHN-0K-hy2">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--second-->
         <scene sceneID="JFO-Cr-V3R">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AFL-rQ-6zs" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="h03-w8-qV6" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WYP-3p-xas"/>
@@ -17,16 +17,69 @@
                     <view key="view" contentMode="scaleToFill" id="3JI-Hr-wmA">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WEx-41-rVM">
+                                <rect key="frame" x="20" y="507" width="560" height="44"/>
+                                <items>
+                                    <barButtonItem title="Item" id="hYo-Dc-fuX">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="barbuttonitem_title"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <tabBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-Qk-bbU">
+                                <rect key="frame" x="20" y="458" width="560" height="49"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <items>
+                                    <tabBarItem title="first" id="spP-Aw-ems">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="tab_one"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tabBarItem>
+                                    <tabBarItem title="second" id="hXi-ua-mZU">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="tab_two"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </tabBarItem>
+                                </items>
+                            </tabBar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ryZ-d8-BDX">
+                                <rect key="frame" x="20" y="20" width="560" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="N9H-hs-8Hb">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" id="via-z4-tJ3">
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="barbuttonitem_title"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ryZ-d8-BDX" firstAttribute="leading" secondItem="3JI-Hr-wmA" secondAttribute="leadingMargin" id="2kQ-YL-kEv"/>
+                            <constraint firstItem="60Y-Qk-bbU" firstAttribute="leading" secondItem="3JI-Hr-wmA" secondAttribute="leadingMargin" id="2sf-W6-19r"/>
+                            <constraint firstItem="WEx-41-rVM" firstAttribute="top" secondItem="60Y-Qk-bbU" secondAttribute="bottom" id="6RW-9v-itW"/>
+                            <constraint firstItem="ryZ-d8-BDX" firstAttribute="top" secondItem="WYP-3p-xas" secondAttribute="bottom" id="AuS-6Y-d7L"/>
+                            <constraint firstItem="WEx-41-rVM" firstAttribute="leading" secondItem="3JI-Hr-wmA" secondAttribute="leadingMargin" id="C3B-f4-LQG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WEx-41-rVM" secondAttribute="trailing" id="g9u-tS-PjO"/>
+                            <constraint firstItem="60Y-Qk-bbU" firstAttribute="trailing" secondItem="3JI-Hr-wmA" secondAttribute="trailingMargin" id="nmE-zr-sWo"/>
+                            <constraint firstItem="XDT-J7-aXV" firstAttribute="top" secondItem="WEx-41-rVM" secondAttribute="bottom" id="o4U-uN-7GV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ryZ-d8-BDX" secondAttribute="trailing" id="sKQ-0T-5Xb"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="second" id="PBR-IM-rSn">
+                    <tabBarItem key="tabBarItem" title="second" id="XKl-EA-0By">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="tab_two"/>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
+                    <navigationItem key="navigationItem" id="ydA-7g-hsu"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AFL-rQ-6zs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="233" y="795"/>
+            <point key="canvasLocation" x="233" y="855"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="RQN-Fd-92n">
@@ -39,8 +92,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="h03-w8-qV6" kind="relationship" relationship="viewControllers" id="fsi-rB-B28"/>
                         <segue destination="fsI-Jj-7Kn" kind="relationship" relationship="viewControllers" id="EKS-DB-yR8"/>
-                        <segue destination="h03-w8-qV6" kind="relationship" relationship="viewControllers" id="B23-Ha-pxV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEy-QE-427" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -59,7 +112,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-0G-0cS">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-0G-0cS">
                                 <rect key="frame" x="208" y="110" width="185" height="29"/>
                                 <segments>
                                     <segment title="First"/>
@@ -79,7 +132,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="example_label_text"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-yw-Znf">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-yw-Znf">
                                 <rect key="frame" x="32" y="190.5" width="536" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -87,7 +140,7 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="example_textfield_placeholder"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87g-iW-1i8">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87g-iW-1i8">
                                 <rect key="frame" x="228" y="236.5" width="145" height="30"/>
                                 <state key="normal" title="This will be overriden">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,7 +152,7 @@
                                     <segue destination="LGr-Cu-eAY" kind="show" id="vt2-Vz-rjq"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCj-Js-Oy9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCj-Js-Oy9">
                                 <rect key="frame" x="16" y="280" width="568" height="79"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>

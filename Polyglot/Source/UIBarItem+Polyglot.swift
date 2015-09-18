@@ -28,7 +28,10 @@ public extension UIBarItem {
     var titleKey: String {
         get { return "" }
         set {
+            // Disable animations, it might be visible in some situations otherwise
+            UIView.setAnimationsEnabled(false)
             self.title = NSLocalizedString(newValue, comment:newValue)
+            UIView.setAnimationsEnabled(true)
         }
     }
 }

@@ -3,6 +3,8 @@
 "example_textfield_placeholder" = "Hello UITextField";
 "example_textview_text" = "Hello Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
 
+"barbuttonitem_title" = "Hello BarButtonItem";
+
 "example_segment_one" = "One";
 "example_segment_two" = "Two";
 "example_segment_three" = "Three";
