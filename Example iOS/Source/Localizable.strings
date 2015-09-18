@@ -15,3 +15,7 @@
 "navigation_title" = "Title";
 "navigation_prompt" = "Prompt";
 "navigation_back" = "Back";
+
+"searchbar_navigation_placeholder" = "Search Title";
+"searchbar_content_placeholder" = "Search content";
+"searchbar_content_prompt" = "Search field:";

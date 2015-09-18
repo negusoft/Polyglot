@@ -92,8 +92,8 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="h03-w8-qV6" kind="relationship" relationship="viewControllers" id="fsi-rB-B28"/>
                         <segue destination="fsI-Jj-7Kn" kind="relationship" relationship="viewControllers" id="EKS-DB-yR8"/>
+                        <segue destination="h03-w8-qV6" kind="relationship" relationship="viewControllers" id="fsi-rB-B28"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OEy-QE-427" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -112,8 +112,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-0G-0cS">
-                                <rect key="frame" x="208" y="110" width="185" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RxM-0G-0cS">
+                                <rect key="frame" x="209.5" y="110" width="182" height="29"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
@@ -132,16 +132,16 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="example_label_text"/>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-yw-Znf">
-                                <rect key="frame" x="32" y="190.5" width="536" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="placeholder" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cxm-yw-Znf">
+                                <rect key="frame" x="36" y="190.5" width="528" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="example_textfield_placeholder"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87g-iW-1i8">
-                                <rect key="frame" x="228" y="236.5" width="145" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87g-iW-1i8">
+                                <rect key="frame" x="227.5" y="236.5" width="146" height="30"/>
                                 <state key="normal" title="This will be overriden">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -152,8 +152,8 @@
                                     <segue destination="LGr-Cu-eAY" kind="show" id="vt2-Vz-rjq"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nCj-Js-Oy9">
-                                <rect key="frame" x="16" y="280" width="568" height="79"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCj-Js-Oy9">
+                                <rect key="frame" x="20" y="280" width="560" height="79"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="79" id="cK2-al-6Mm"/>
@@ -213,10 +213,38 @@
                     <view key="view" contentMode="scaleToFill" id="Xfg-ki-mrI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="dYP-85-4ps">
+                                <rect key="frame" x="20" y="64" width="560" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="searchbar_content_placeholder"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="promptKey" value="searchbar_content_prompt"/>
+                                </userDefinedRuntimeAttributes>
+                            </searchBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="dYP-85-4ps" secondAttribute="trailing" id="CHT-AT-43J"/>
+                            <constraint firstItem="dYP-85-4ps" firstAttribute="top" secondItem="GQW-Il-Jwu" secondAttribute="bottom" id="CfK-Bt-V1G"/>
+                            <constraint firstItem="dYP-85-4ps" firstAttribute="leading" secondItem="Xfg-ki-mrI" secondAttribute="leadingMargin" id="PSS-oH-Lfg"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2d2-og-dfY">
+                        <connections>
+                            <outlet property="titleView" destination="ebl-Zb-vRj" id="NLP-3E-718"/>
+                        </connections>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HEL-WW-oLj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" id="ebl-Zb-vRj">
+                    <rect key="frame" x="0.0" y="0.0" width="560" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="searchbar_navigation_placeholder"/>
+                    </userDefinedRuntimeAttributes>
+                </searchBar>
             </objects>
             <point key="canvasLocation" x="1781" y="131"/>
         </scene>
