@@ -163,6 +163,7 @@
 		22F496941BA3110600EE5EBA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "NEGU Soft";
 				TargetAttributes = {
