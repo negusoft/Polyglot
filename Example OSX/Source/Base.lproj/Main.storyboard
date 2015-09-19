@@ -671,6 +671,39 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Lu-bc-SqR">
+                                <rect key="frame" x="221" y="127" width="38" height="17"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="BJ6-1r-dX2">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="textfield_label_title"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fke-kJ-xxe">
+                                <rect key="frame" x="192" y="97" width="96" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="96" id="UuC-qs-DvW"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="LnD-fV-3TV">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="textfield_editable_placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1Lu-bc-SqR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="SpU-VM-h19"/>
+                            <constraint firstItem="1Lu-bc-SqR" firstAttribute="centerY" secondItem="m2S-Jp-Qdl" secondAttribute="centerY" id="jTE-j1-L1X"/>
+                            <constraint firstItem="fke-kJ-xxe" firstAttribute="top" secondItem="1Lu-bc-SqR" secondAttribute="bottom" constant="8" id="uyd-EX-frw"/>
+                            <constraint firstItem="fke-kJ-xxe" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="yRf-5L-IMs"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
