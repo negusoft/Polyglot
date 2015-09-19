@@ -25,10 +25,34 @@ import UIKit
 public extension UIButton {
     
     @IBInspectable
-    var titleKey: String {
+    var defaultTitleKey: String {
         get { return "" }
         set {
             self.setTitle(NSLocalizedString(newValue, comment:newValue), forState: .Normal)
+        }
+    }
+
+    @IBInspectable
+    var highLightedTitleKey: String {
+        get { return "" }
+        set {
+            self.setTitle(NSLocalizedString(newValue, comment:newValue), forState: .Highlighted)
+        }
+    }
+
+    @IBInspectable
+    var selectedTitleKey: String {
+        get { return "" }
+        set {
+            self.setTitle(NSLocalizedString(newValue, comment:newValue), forState: .Selected)
+        }
+    }
+
+    @IBInspectable
+    var disabledTitleKey: String {
+        get { return "" }
+        set {
+            self.setTitle(NSLocalizedString(newValue, comment:newValue), forState: .Disabled)
         }
     }
 }
