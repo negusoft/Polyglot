@@ -1,4 +1,15 @@
 "viewcontroller_textfields_title" = "TextFields";
+"viewcontroller_buttons_title" = "Buttons";
 
 "textfield_label_title" = "Hello world";
 "textfield_editable_placeholder" = "Placeholder text";
+
+"buttons_push_title" = "Push Button";
+"buttons_textured_rounded_title" = "Textured Rounded";
+"buttons_popup_title" = "Pop up";
+"buttons_check_title" = "Check";
+"buttons_radio_title" = "Radio";
+"buttons_roundrect_title" = "Round Rect";
+"buttons_recessed_title" = "Recessed";
+"buttons_inline_title" = "Inline";
+"buttons_image_title" = "Image";

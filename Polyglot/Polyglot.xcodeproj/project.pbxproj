@@ -19,6 +19,7 @@
 		22F496921BA2DC1E00EE5EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F4968F1BA2DB3800EE5EBA /* Info.plist */; };
 		22F496C41BA3195A00EE5EBA /* UILabel+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F496C31BA3195A00EE5EBA /* UILabel+Polyglot.swift */; };
 		88490D591BAEDCF500469D4B /* NSViewController+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88490D581BAEDCF500469D4B /* NSViewController+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
+		88490D5D1BAEE20E00469D4B /* NSButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88490D5C1BAEE20E00469D4B /* NSButton+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 		8861BE851BAD5AF20067DECF /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8861BE7B1BAD5AF20067DECF /* Polyglot.framework */; settings = {ASSET_TAGS = (); }; };
 		8861BEAF1BAD63850067DECF /* NSTextField+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		22F4968F1BA2DB3800EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 		22F496C31BA3195A00EE5EBA /* UILabel+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Polyglot.swift"; sourceTree = "<group>"; };
 		88490D581BAEDCF500469D4B /* NSViewController+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSViewController+Polyglot.swift"; sourceTree = "<group>"; };
+		88490D5C1BAEE20E00469D4B /* NSButton+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSButton+Polyglot.swift"; sourceTree = "<group>"; };
 		8861BE7B1BAD5AF20067DECF /* Polyglot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyglot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861BE841BAD5AF20067DECF /* Polyglot OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polyglot OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextField+Polyglot.swift"; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				224D58EA1BAC36B80040B007 /* UISearchBar+Polyglot.swift */,
 				8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */,
 				88490D581BAEDCF500469D4B /* NSViewController+Polyglot.swift */,
+				88490D5C1BAEE20E00469D4B /* NSButton+Polyglot.swift */,
 				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
 			);
 			path = Source;
@@ -357,6 +360,7 @@
 			files = (
 				8861BEAF1BAD63850067DECF /* NSTextField+Polyglot.swift in Sources */,
 				88490D591BAEDCF500469D4B /* NSViewController+Polyglot.swift in Sources */,
+				88490D5D1BAEE20E00469D4B /* NSButton+Polyglot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
