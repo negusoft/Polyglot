@@ -684,9 +684,9 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fke-kJ-xxe">
-                                <rect key="frame" x="192" y="215" width="96" height="22"/>
+                                <rect key="frame" x="150" y="215" width="180" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="UuC-qs-DvW"/>
+                                    <constraint firstAttribute="width" constant="180" id="UuC-qs-DvW"/>
                                 </constraints>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="LnD-fV-3TV">
                                     <font key="font" metaFont="system"/>
@@ -697,11 +697,79 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="textfield_editable_placeholder"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="paf-nv-zyX">
+                                <rect key="frame" x="150" y="185" width="180" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="LSR-4z-rNP"/>
+                                </constraints>
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" usesSingleLineMode="YES" bezelStyle="round" id="T7n-US-9PU">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </searchFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="textfield_search_placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </searchField>
+                            <tokenField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZAT-zP-Px5">
+                                <rect key="frame" x="150" y="155" width="180" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="c0A-kT-37u"/>
+                                </constraints>
+                                <tokenFieldCell key="cell" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" drawsBackground="YES" allowsEditingTextAttributes="YES" id="jqh-KP-0Kg">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </tokenFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="textfield_token_placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </tokenField>
+                            <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tw0-E5-hGg">
+                                <rect key="frame" x="150" y="125" width="180" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="AYS-gR-x0Q"/>
+                                </constraints>
+                                <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="GhJ-dt-V48">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </secureTextFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="textfield_secure_placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </secureTextField>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Psz-co-b09">
+                                <rect key="frame" x="150" y="93" width="180" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="h7H-hF-hAF"/>
+                                </constraints>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="" drawsBackground="YES" id="bn2-dE-LoA">
+                                    <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="CrE-4y-PBi"/>
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="textfield_numberformatter_placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="tw0-E5-hGg" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="FAf-o1-TtF"/>
+                            <constraint firstItem="paf-nv-zyX" firstAttribute="top" secondItem="fke-kJ-xxe" secondAttribute="bottom" constant="8" id="H4W-0d-H4N"/>
+                            <constraint firstItem="tw0-E5-hGg" firstAttribute="top" secondItem="ZAT-zP-Px5" secondAttribute="bottom" constant="8" id="J8p-D4-YTL"/>
+                            <constraint firstItem="Psz-co-b09" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="OeP-nT-ntG"/>
                             <constraint firstItem="1Lu-bc-SqR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="SpU-VM-h19"/>
+                            <constraint firstItem="ZAT-zP-Px5" firstAttribute="top" secondItem="paf-nv-zyX" secondAttribute="bottom" constant="8" id="bLG-zo-Kcl"/>
                             <constraint firstItem="1Lu-bc-SqR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="bhj-m9-fLO"/>
+                            <constraint firstItem="Psz-co-b09" firstAttribute="top" secondItem="tw0-E5-hGg" secondAttribute="bottom" constant="10" id="h96-Z8-yCw"/>
+                            <constraint firstItem="paf-nv-zyX" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="jSD-mO-o4D"/>
                             <constraint firstItem="fke-kJ-xxe" firstAttribute="top" secondItem="1Lu-bc-SqR" secondAttribute="bottom" constant="8" id="uyd-EX-frw"/>
+                            <constraint firstItem="ZAT-zP-Px5" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="w0S-2N-knH"/>
                             <constraint firstItem="fke-kJ-xxe" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="yRf-5L-IMs"/>
                         </constraints>
                     </view>

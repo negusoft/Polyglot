@@ -2,7 +2,11 @@
 "viewcontroller_buttons_title" = "Buttons";
 
 "textfield_label_title" = "Hello world";
-"textfield_editable_placeholder" = "Placeholder text";
+"textfield_editable_placeholder" = "Placeholder editable";
+"textfield_search_placeholder" = "Placeholder search";
+"textfield_token_placeholder" = "Placeholder token";
+"textfield_secure_placeholder" = "Placeholder secure";
+"textfield_numberformatter_placeholder" = "Placeholder number formatter";
 
 "buttons_push_title" = "Push Button";
 "buttons_textured_rounded_title" = "Textured Rounded";
