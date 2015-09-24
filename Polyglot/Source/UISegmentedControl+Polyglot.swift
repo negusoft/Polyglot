@@ -35,6 +35,9 @@ public extension UISegmentedControl {
             let spaceCharacterSet = NSCharacterSet(charactersInString: " ")
             
             for index in 0..<self.numberOfSegments {
+                if index >= keys.count {
+                    break
+                }
                 let key = keys[index].stringByTrimmingCharactersInSet(spaceCharacterSet)
                 if (!key.isEmpty) {
                     let title = NSLocalizedString(key, comment:key)
