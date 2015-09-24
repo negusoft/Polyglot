@@ -94,6 +94,7 @@
 		8861BE941BAD5EF90067DECF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "NEGU Soft";
 				TargetAttributes = {
@@ -280,6 +281,7 @@
 				8861BEAD1BAD5EF90067DECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

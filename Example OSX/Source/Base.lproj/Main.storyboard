@@ -767,13 +767,16 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="APq-Z4-4fe">
-                                <rect key="frame" x="187" y="209" width="76" height="26"/>
-                                <popUpButtonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="QTK-W3-y0e" id="57b-eB-GO8">
+                                <rect key="frame" x="163" y="209" width="125" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Z75-Of-iYz"/>
+                                </constraints>
+                                <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="57b-eB-GO8">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="I03-e1-JMG">
                                         <items>
-                                            <menuItem title="Button" state="on" id="QTK-W3-y0e"/>
+                                            <menuItem title="Button" id="QTK-W3-y0e"/>
                                             <menuItem title="Item 2" id="0xC-yv-W7k"/>
                                             <menuItem title="Item 3" id="fnt-ST-d0q"/>
                                         </items>
@@ -807,7 +810,7 @@
                                 <rect key="frame" x="199" y="139" width="53" height="19"/>
                                 <buttonCell key="cell" type="roundRect" title="Button" bezelStyle="roundedRect" alignment="center" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="szW-WV-Zkb">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="titleBar" size="12"/>
+                                    <font key="font" metaFont="cellTitle"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="buttons_roundrect_title"/>
