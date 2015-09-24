@@ -784,7 +784,7 @@
         <!--Tab View Controller-->
         <scene sceneID="fhn-Tc-yN7">
             <objects>
-                <tabViewController selectedTabViewItemIndex="1" id="qMR-w1-n7l" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="0" id="qMR-w1-n7l" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="q8i-5w-lwP"/>
                         <tabViewItem identifier="" id="hoR-KY-QIQ"/>

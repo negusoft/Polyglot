@@ -22,6 +22,7 @@
 		88490D5D1BAEE20E00469D4B /* NSButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88490D5C1BAEE20E00469D4B /* NSButton+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 		8861BE851BAD5AF20067DECF /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8861BE7B1BAD5AF20067DECF /* Polyglot.framework */; settings = {ASSET_TAGS = (); }; };
 		8861BEAF1BAD63850067DECF /* NSTextField+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
+		88A4AD011BB48EC90030C15C /* NSTabViewItem+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A4AD001BB48EC90030C15C /* NSTabViewItem+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		8861BE7B1BAD5AF20067DECF /* Polyglot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyglot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861BE841BAD5AF20067DECF /* Polyglot OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polyglot OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextField+Polyglot.swift"; sourceTree = "<group>"; };
+		88A4AD001BB48EC90030C15C /* NSTabViewItem+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTabViewItem+Polyglot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */,
 				88490D581BAEDCF500469D4B /* NSViewController+Polyglot.swift */,
 				88490D5C1BAEE20E00469D4B /* NSButton+Polyglot.swift */,
+				88A4AD001BB48EC90030C15C /* NSTabViewItem+Polyglot.swift */,
 				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
 			);
 			path = Source;
@@ -360,6 +363,7 @@
 			files = (
 				8861BEAF1BAD63850067DECF /* NSTextField+Polyglot.swift in Sources */,
 				88490D591BAEDCF500469D4B /* NSViewController+Polyglot.swift in Sources */,
+				88A4AD011BB48EC90030C15C /* NSTabViewItem+Polyglot.swift in Sources */,
 				88490D5D1BAEE20E00469D4B /* NSButton+Polyglot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
