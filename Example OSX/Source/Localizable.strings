@@ -1,5 +1,6 @@
 "viewcontroller_textfields_title" = "TextFields";
 "viewcontroller_buttons_title" = "Buttons";
+"viewcontroller_misc_title" = "Miscellaneous";
 
 "textfield_label_title" = "Hello world";
 "textfield_editable_placeholder" = "Placeholder editable";
@@ -7,6 +8,8 @@
 "textfield_token_placeholder" = "Placeholder token";
 "textfield_secure_placeholder" = "Placeholder secure";
 "textfield_numberformatter_placeholder" = "Placeholder number formatter";
+"textfield_multiline_title" = "Hello multiline";
+"textfield_wrapping_placeholder" = "Placeholder wrapping";
 
 "buttons_push_title" = "Push Button";
 "buttons_textured_rounded_title" = "Textured Rounded";
@@ -21,3 +24,7 @@
 "combobox_item_1" = "Item One";
 "combobox_item_2" = "Item Two";
 "combobox_item_3" = "Item Three";
+
+"segmented_control_item_1" = "One";
+"segmented_control_item_2" = "Two";
+"segmented_control_item_3" = "Three";

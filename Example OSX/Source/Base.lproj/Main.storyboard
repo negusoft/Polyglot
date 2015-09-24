@@ -757,17 +757,46 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="textfield_numberformatter_placeholder"/>
                                 </userDefinedRuntimeAttributes>
                             </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" setsMaxLayoutWidthAtFirstLayout="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vft-do-5aR">
+                                <rect key="frame" x="193" y="68" width="94" height="17"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" title="Multiline Label" id="yHg-O9-o70">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="textfield_multiline_title"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Qs4-fb-dSi">
+                                <rect key="frame" x="150" y="38" width="180" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="kjF-LB-aiD"/>
+                                </constraints>
+                                <textFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="suk-jD-eHw">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="textfield_wrapping_placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <constraints>
                             <constraint firstItem="tw0-E5-hGg" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="FAf-o1-TtF"/>
                             <constraint firstItem="paf-nv-zyX" firstAttribute="top" secondItem="fke-kJ-xxe" secondAttribute="bottom" constant="8" id="H4W-0d-H4N"/>
                             <constraint firstItem="tw0-E5-hGg" firstAttribute="top" secondItem="ZAT-zP-Px5" secondAttribute="bottom" constant="8" id="J8p-D4-YTL"/>
                             <constraint firstItem="Psz-co-b09" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="OeP-nT-ntG"/>
+                            <constraint firstItem="Qs4-fb-dSi" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Peb-E5-Dfu"/>
                             <constraint firstItem="1Lu-bc-SqR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="SpU-VM-h19"/>
                             <constraint firstItem="ZAT-zP-Px5" firstAttribute="top" secondItem="paf-nv-zyX" secondAttribute="bottom" constant="8" id="bLG-zo-Kcl"/>
                             <constraint firstItem="1Lu-bc-SqR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="8" id="bhj-m9-fLO"/>
+                            <constraint firstItem="vft-do-5aR" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="eei-5d-eNY"/>
+                            <constraint firstItem="vft-do-5aR" firstAttribute="top" secondItem="Psz-co-b09" secondAttribute="bottom" constant="8" id="fao-LW-gxg"/>
                             <constraint firstItem="Psz-co-b09" firstAttribute="top" secondItem="tw0-E5-hGg" secondAttribute="bottom" constant="10" id="h96-Z8-yCw"/>
                             <constraint firstItem="paf-nv-zyX" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="jSD-mO-o4D"/>
+                            <constraint firstItem="Qs4-fb-dSi" firstAttribute="top" secondItem="vft-do-5aR" secondAttribute="bottom" constant="8" id="qRx-TP-v10"/>
                             <constraint firstItem="fke-kJ-xxe" firstAttribute="top" secondItem="1Lu-bc-SqR" secondAttribute="bottom" constant="8" id="uyd-EX-frw"/>
                             <constraint firstItem="ZAT-zP-Px5" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="w0S-2N-knH"/>
                             <constraint firstItem="fke-kJ-xxe" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="yRf-5L-IMs"/>
@@ -948,10 +977,10 @@
             </objects>
             <point key="canvasLocation" x="865" y="574"/>
         </scene>
-        <!--View Controller-->
+        <!--Miscellaneous-->
         <scene sceneID="XU4-MM-VpV">
             <objects>
-                <viewController id="dUD-T8-Osw" sceneMemberID="viewController">
+                <viewController title="Miscellaneous" id="dUD-T8-Osw" sceneMemberID="viewController">
                     <view key="view" id="WVE-Xk-0sX">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -975,12 +1004,31 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="titleKeysCSV" value="combobox_item_1, combobox_item_2, combobox_item_3"/>
                                 </userDefinedRuntimeAttributes>
                             </comboBox>
+                            <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hGp-4i-XLm">
+                                <rect key="frame" x="143" y="229" width="165" height="24"/>
+                                <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="Ej3-se-LWN">
+                                    <font key="font" metaFont="system"/>
+                                    <segments>
+                                        <segment label="first" selected="YES"/>
+                                        <segment label="second" tag="1"/>
+                                        <segment label="third"/>
+                                    </segments>
+                                </segmentedCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="labelKeysCSV" value="segmented_control_item_1, segmented_control_item_2, segmented_control_item_3"/>
+                                </userDefinedRuntimeAttributes>
+                            </segmentedControl>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FEu-yL-SKH" firstAttribute="centerX" secondItem="WVE-Xk-0sX" secondAttribute="centerX" id="7ff-9T-3Dx"/>
+                            <constraint firstItem="hGp-4i-XLm" firstAttribute="top" secondItem="FEu-yL-SKH" secondAttribute="bottom" constant="8" id="Kg2-2c-Nq0"/>
+                            <constraint firstItem="hGp-4i-XLm" firstAttribute="centerX" secondItem="WVE-Xk-0sX" secondAttribute="centerX" id="lgZ-st-qde"/>
                             <constraint firstItem="FEu-yL-SKH" firstAttribute="top" secondItem="WVE-Xk-0sX" secondAttribute="top" constant="20" id="oEA-pj-e8m"/>
                         </constraints>
                     </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="viewcontroller_misc_title"/>
+                    </userDefinedRuntimeAttributes>
                 </viewController>
                 <customObject id="ged-0E-CLR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
