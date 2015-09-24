@@ -17,3 +17,7 @@
 "buttons_recessed_title" = "Recessed";
 "buttons_inline_title" = "Inline";
 "buttons_image_title" = "Image";
+
+"combobox_item_1" = "Item One";
+"combobox_item_2" = "Item Two";
+"combobox_item_3" = "Item Three";

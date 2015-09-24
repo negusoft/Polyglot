@@ -784,7 +784,7 @@
         <!--Tab View Controller-->
         <scene sceneID="fhn-Tc-yN7">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" id="qMR-w1-n7l" sceneMemberID="viewController">
+                <tabViewController selectedTabViewItemIndex="1" id="qMR-w1-n7l" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem id="q8i-5w-lwP"/>
                         <tabViewItem identifier="" id="hoR-KY-QIQ"/>
@@ -806,10 +806,10 @@
             </objects>
             <point key="canvasLocation" x="145" y="657"/>
         </scene>
-        <!--View Controller-->
+        <!--ButtonsTitle-->
         <scene sceneID="MJ8-RL-v26">
             <objects>
-                <viewController id="FN4-BS-jPl" sceneMemberID="viewController">
+                <viewController title="ButtonsTitle" id="FN4-BS-jPl" sceneMemberID="viewController">
                     <view key="view" id="7eW-rc-3r0">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -955,6 +955,31 @@
                     <view key="view" id="WVE-Xk-0sX">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <comboBox verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="FEu-yL-SKH">
+                                <rect key="frame" x="135" y="256" width="183" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Eg4-q2-oTs"/>
+                                </constraints>
+                                <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="Lu3-sE-dKE">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <objectValues>
+                                        <string>Item 1</string>
+                                        <string>Item 2</string>
+                                        <string>Item 3</string>
+                                    </objectValues>
+                                </comboBoxCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="titleKeysCSV" value="combobox_item_1, combobox_item_2, combobox_item_3"/>
+                                </userDefinedRuntimeAttributes>
+                            </comboBox>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FEu-yL-SKH" firstAttribute="centerX" secondItem="WVE-Xk-0sX" secondAttribute="centerX" id="7ff-9T-3Dx"/>
+                            <constraint firstItem="FEu-yL-SKH" firstAttribute="top" secondItem="WVE-Xk-0sX" secondAttribute="top" constant="20" id="oEA-pj-e8m"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="ged-0E-CLR" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
