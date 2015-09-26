@@ -28,3 +28,10 @@
 "segmented_control_item_1" = "One";
 "segmented_control_item_2" = "Two";
 "segmented_control_item_3" = "Three";
+
+"form_field_title_1" = "Field A";
+"form_field_title_2" = "Field B";
+"form_field_title_3" = "Field C";
+"form_field_placeholder_1" = "Placeholder A";
+"form_field_placeholder_2" = "Placeholder B";
+"form_field_placeholder_3" = "Placeholder C";

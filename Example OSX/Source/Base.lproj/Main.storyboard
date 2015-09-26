@@ -1018,10 +1018,53 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="labelKeysCSV" value="segmented_control_item_1, segmented_control_item_2, segmented_control_item_3"/>
                                 </userDefinedRuntimeAttributes>
                             </segmentedControl>
+                            <form verticalHuggingPriority="750" mode="track" allowsEmptySelection="NO" autorecalculatesCellSize="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ed-ei-w1v">
+                                <rect key="frame" x="135" y="141" width="180" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="iS5-8m-uNW"/>
+                                </constraints>
+                                <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                <size key="cellSize" width="145.60365853658539" height="22"/>
+                                <size key="intercellSpacing" width="8" height="8"/>
+                                <formCell key="prototype" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field:" id="cPi-ZH-4gN">
+                                    <font key="font" metaFont="system"/>
+                                    <font key="titleFont" metaFont="system"/>
+                                </formCell>
+                                <cells>
+                                    <column>
+                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field 1:" placeholderString="Placeholder 1" id="PiO-F5-dUp">
+                                            <font key="font" metaFont="system"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="form_field_title_1"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="form_field_placeholder_1"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </formCell>
+                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field 2:" placeholderString="Placeholder 2" id="i07-MU-M5N">
+                                            <font key="font" metaFont="system"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="form_field_title_2"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="form_field_placeholder_2"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </formCell>
+                                        <formCell scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" alignment="justified" title="Field 3:" placeholderString="Placeholder 3" id="WE0-Q7-BLs">
+                                            <font key="font" metaFont="system"/>
+                                            <font key="titleFont" metaFont="system"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="titleKey" value="form_field_title_3"/>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="placeholderKey" value="form_field_placeholder_3"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </formCell>
+                                    </column>
+                                </cells>
+                            </form>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FEu-yL-SKH" firstAttribute="centerX" secondItem="WVE-Xk-0sX" secondAttribute="centerX" id="7ff-9T-3Dx"/>
+                            <constraint firstItem="6ed-ei-w1v" firstAttribute="centerX" secondItem="WVE-Xk-0sX" secondAttribute="centerX" id="D2n-CX-Pgy"/>
                             <constraint firstItem="hGp-4i-XLm" firstAttribute="top" secondItem="FEu-yL-SKH" secondAttribute="bottom" constant="8" id="Kg2-2c-Nq0"/>
+                            <constraint firstItem="6ed-ei-w1v" firstAttribute="top" secondItem="hGp-4i-XLm" secondAttribute="bottom" constant="8" id="UaQ-U2-UtK"/>
                             <constraint firstItem="hGp-4i-XLm" firstAttribute="centerX" secondItem="WVE-Xk-0sX" secondAttribute="centerX" id="lgZ-st-qde"/>
                             <constraint firstItem="FEu-yL-SKH" firstAttribute="top" secondItem="WVE-Xk-0sX" secondAttribute="top" constant="20" id="oEA-pj-e8m"/>
                         </constraints>
