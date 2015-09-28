@@ -9,18 +9,14 @@
 /* Begin PBXBuildFile section */
 		224D58EB1BAC36B80040B007 /* UISearchBar+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D58EA1BAC36B80040B007 /* UISearchBar+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 		225FD6941BA98D86006AAF6F /* UITextView+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD6931BA98D86006AAF6F /* UITextView+Polyglot.swift */; };
-		22C288811BA2D4590004AED4 /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C288761BA2D4590004AED4 /* Polyglot.framework */; };
 		22E71C361BA80657000B39D3 /* UIButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */; };
 		22E71C381BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C371BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift */; };
 		22E71C3A1BA815AF000B39D3 /* UITextField+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C391BA815AF000B39D3 /* UITextField+Polyglot.swift */; };
 		22E990441BAAF9E40084D941 /* UIBarItem+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E990431BAAF9E40084D941 /* UIBarItem+Polyglot.swift */; };
 		22E990461BAB13820084D941 /* UINavigationItem+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E990451BAB13820084D941 /* UINavigationItem+Polyglot.swift */; };
-		22F496911BA2DC0F00EE5EBA /* PolyglotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */; };
-		22F496921BA2DC1E00EE5EBA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 22F4968F1BA2DB3800EE5EBA /* Info.plist */; };
 		22F496C41BA3195A00EE5EBA /* UILabel+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F496C31BA3195A00EE5EBA /* UILabel+Polyglot.swift */; };
 		88490D591BAEDCF500469D4B /* NSViewController+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88490D581BAEDCF500469D4B /* NSViewController+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 		88490D5D1BAEE20E00469D4B /* NSButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88490D5C1BAEE20E00469D4B /* NSButton+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
-		8861BE851BAD5AF20067DECF /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8861BE7B1BAD5AF20067DECF /* Polyglot.framework */; settings = {ASSET_TAGS = (); }; };
 		8861BEAF1BAD63850067DECF /* NSTextField+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 		88A4AD011BB48EC90030C15C /* NSTabViewItem+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A4AD001BB48EC90030C15C /* NSTabViewItem+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 		88A4AD031BB490850030C15C /* NSComboBox+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A4AD021BB490850030C15C /* NSComboBox+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
@@ -29,41 +25,20 @@
 		88A4AD091BB6A7570030C15C /* NSTableColumn+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A4AD081BB6A7570030C15C /* NSTableColumn+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		22C288821BA2D4590004AED4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22C288431BA2D01C0004AED4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22C288751BA2D4590004AED4;
-			remoteInfo = "Polyglot iOS";
-		};
-		8861BE861BAD5AF20067DECF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22C288431BA2D01C0004AED4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8861BE7A1BAD5AF20067DECF;
-			remoteInfo = "Polyglot OSX";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		224D58EA1BAC36B80040B007 /* UISearchBar+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Polyglot.swift"; sourceTree = "<group>"; };
 		225FD6931BA98D86006AAF6F /* UITextView+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Polyglot.swift"; sourceTree = "<group>"; };
 		22C288761BA2D4590004AED4 /* Polyglot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyglot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		22C288801BA2D4590004AED4 /* Polyglot iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polyglot iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Polyglot.swift"; sourceTree = "<group>"; };
 		22E71C371BA8082E000B39D3 /* UISegmentedControl+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+Polyglot.swift"; sourceTree = "<group>"; };
 		22E71C391BA815AF000B39D3 /* UITextField+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextField+Polyglot.swift"; sourceTree = "<group>"; };
 		22E990431BAAF9E40084D941 /* UIBarItem+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarItem+Polyglot.swift"; sourceTree = "<group>"; };
 		22E990451BAB13820084D941 /* UINavigationItem+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationItem+Polyglot.swift"; sourceTree = "<group>"; };
 		22F4968B1BA2DB0900EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Source/Info.plist; sourceTree = SOURCE_ROOT; };
-		22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PolyglotTests.swift; path = Tests/PolyglotTests.swift; sourceTree = SOURCE_ROOT; };
-		22F4968F1BA2DB3800EE5EBA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = SOURCE_ROOT; };
 		22F496C31BA3195A00EE5EBA /* UILabel+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Polyglot.swift"; sourceTree = "<group>"; };
 		88490D581BAEDCF500469D4B /* NSViewController+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSViewController+Polyglot.swift"; sourceTree = "<group>"; };
 		88490D5C1BAEE20E00469D4B /* NSButton+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSButton+Polyglot.swift"; sourceTree = "<group>"; };
 		8861BE7B1BAD5AF20067DECF /* Polyglot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyglot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8861BE841BAD5AF20067DECF /* Polyglot OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Polyglot OSXTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextField+Polyglot.swift"; sourceTree = "<group>"; };
 		88A4AD001BB48EC90030C15C /* NSTabViewItem+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTabViewItem+Polyglot.swift"; sourceTree = "<group>"; };
 		88A4AD021BB490850030C15C /* NSComboBox+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSComboBox+Polyglot.swift"; sourceTree = "<group>"; };
@@ -80,26 +55,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22C2887D1BA2D4590004AED4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22C288811BA2D4590004AED4 /* Polyglot.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8861BE771BAD5AF20067DECF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8861BE811BAD5AF20067DECF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8861BE851BAD5AF20067DECF /* Polyglot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				22C2884D1BA2D01C0004AED4 /* Source */,
-				22C288631BA2D01C0004AED4 /* Tests */,
 				22C2884C1BA2D01C0004AED4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,9 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				22C288761BA2D4590004AED4 /* Polyglot.framework */,
-				22C288801BA2D4590004AED4 /* Polyglot iOS Tests.xctest */,
 				8861BE7B1BAD5AF20067DECF /* Polyglot.framework */,
-				8861BE841BAD5AF20067DECF /* Polyglot OSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,23 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				22F4968B1BA2DB0900EE5EBA /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		22C288631BA2D01C0004AED4 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				22F4968D1BA2DB2D00EE5EBA /* PolyglotTests.swift */,
-				22C288641BA2D01C0004AED4 /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		22C288641BA2D01C0004AED4 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				22F4968F1BA2DB3800EE5EBA /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -213,24 +152,6 @@
 			productReference = 22C288761BA2D4590004AED4 /* Polyglot.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		22C2887F1BA2D4590004AED4 /* Polyglot iOS Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22C2888C1BA2D4590004AED4 /* Build configuration list for PBXNativeTarget "Polyglot iOS Tests" */;
-			buildPhases = (
-				22C2887C1BA2D4590004AED4 /* Sources */,
-				22C2887D1BA2D4590004AED4 /* Frameworks */,
-				22C2887E1BA2D4590004AED4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22C288831BA2D4590004AED4 /* PBXTargetDependency */,
-			);
-			name = "Polyglot iOS Tests";
-			productName = "Polyglot iOSTests";
-			productReference = 22C288801BA2D4590004AED4 /* Polyglot iOS Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		8861BE7A1BAD5AF20067DECF /* Polyglot OSX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8861BE901BAD5AF20067DECF /* Build configuration list for PBXNativeTarget "Polyglot OSX" */;
@@ -249,24 +170,6 @@
 			productReference = 8861BE7B1BAD5AF20067DECF /* Polyglot.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8861BE831BAD5AF20067DECF /* Polyglot OSXTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8861BE911BAD5AF20067DECF /* Build configuration list for PBXNativeTarget "Polyglot OSXTests" */;
-			buildPhases = (
-				8861BE801BAD5AF20067DECF /* Sources */,
-				8861BE811BAD5AF20067DECF /* Frameworks */,
-				8861BE821BAD5AF20067DECF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8861BE871BAD5AF20067DECF /* PBXTargetDependency */,
-			);
-			name = "Polyglot OSXTests";
-			productName = "Polyglot OSXTests";
-			productReference = 8861BE841BAD5AF20067DECF /* Polyglot OSXTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -281,13 +184,7 @@
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 7J7VFMUW63;
 					};
-					22C2887F1BA2D4590004AED4 = {
-						CreatedOnToolsVersion = 6.4;
-					};
 					8861BE7A1BAD5AF20067DECF = {
-						CreatedOnToolsVersion = 7.0;
-					};
-					8861BE831BAD5AF20067DECF = {
 						CreatedOnToolsVersion = 7.0;
 					};
 				};
@@ -306,9 +203,7 @@
 			projectRoot = "";
 			targets = (
 				22C288751BA2D4590004AED4 /* Polyglot iOS */,
-				22C2887F1BA2D4590004AED4 /* Polyglot iOS Tests */,
 				8861BE7A1BAD5AF20067DECF /* Polyglot OSX */,
-				8861BE831BAD5AF20067DECF /* Polyglot OSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -321,22 +216,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22C2887E1BA2D4590004AED4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22F496921BA2DC1E00EE5EBA /* Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8861BE791BAD5AF20067DECF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8861BE821BAD5AF20067DECF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,14 +241,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22C2887C1BA2D4590004AED4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22F496911BA2DC0F00EE5EBA /* PolyglotTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8861BE761BAD5AF20067DECF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -384,27 +256,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8861BE801BAD5AF20067DECF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		22C288831BA2D4590004AED4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22C288751BA2D4590004AED4 /* Polyglot iOS */;
-			targetProxy = 22C288821BA2D4590004AED4 /* PBXContainerItemProxy */;
-		};
-		8861BE871BAD5AF20067DECF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8861BE7A1BAD5AF20067DECF /* Polyglot OSX */;
-			targetProxy = 8861BE861BAD5AF20067DECF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		22C288681BA2D01C0004AED4 /* Debug */ = {
@@ -539,36 +391,6 @@
 			};
 			name = Release;
 		};
-		22C2888D1BA2D4590004AED4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		22C2888E1BA2D4590004AED4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		8861BE8C1BAD5AF20067DECF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -620,34 +442,6 @@
 			};
 			name = Release;
 		};
-		8861BE8E1BAD5AF20067DECF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_TESTABILITY = YES;
-				INFOPLIST_FILE = "Polyglot OSXTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.Polyglot-OSXTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		8861BE8F1BAD5AF20067DECF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Polyglot OSXTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.Polyglot-OSXTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -669,29 +463,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		22C2888C1BA2D4590004AED4 /* Build configuration list for PBXNativeTarget "Polyglot iOS Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22C2888D1BA2D4590004AED4 /* Debug */,
-				22C2888E1BA2D4590004AED4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		8861BE901BAD5AF20067DECF /* Build configuration list for PBXNativeTarget "Polyglot OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8861BE8C1BAD5AF20067DECF /* Debug */,
 				8861BE8D1BAD5AF20067DECF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8861BE911BAD5AF20067DECF /* Build configuration list for PBXNativeTarget "Polyglot OSXTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8861BE8E1BAD5AF20067DECF /* Debug */,
-				8861BE8F1BAD5AF20067DECF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

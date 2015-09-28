@@ -12,20 +12,9 @@
 		22F496A71BA3110600EE5EBA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22F496A51BA3110600EE5EBA /* Main.storyboard */; };
 		22F496A91BA3110600EE5EBA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22F496A81BA3110600EE5EBA /* Images.xcassets */; };
 		22F496AC1BA3110600EE5EBA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22F496AA1BA3110600EE5EBA /* LaunchScreen.xib */; };
-		22F496B81BA3110600EE5EBA /* Polyglot_Example_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F496B71BA3110600EE5EBA /* Polyglot_Example_iOSTests.swift */; };
 		22F496C21BA311C300EE5EBA /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F496C11BA311C300EE5EBA /* Polyglot.framework */; };
 		22F496C81BA3235D00EE5EBA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22F496C71BA3235D00EE5EBA /* Localizable.strings */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		22F496B21BA3110600EE5EBA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 22F496941BA3110600EE5EBA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 22F4969B1BA3110600EE5EBA;
-			remoteInfo = "Polyglot Example iOS";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		22F4969C1BA3110600EE5EBA /* Example iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,9 +24,6 @@
 		22F496A61BA3110600EE5EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22F496A81BA3110600EE5EBA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		22F496AB1BA3110600EE5EBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		22F496B11BA3110600EE5EBA /* Example iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Example iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		22F496B61BA3110600EE5EBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		22F496B71BA3110600EE5EBA /* Polyglot_Example_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polyglot_Example_iOSTests.swift; sourceTree = "<group>"; };
 		22F496C11BA311C300EE5EBA /* Polyglot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Polyglot.framework; path = "../../../Library/Developer/Xcode/DerivedData/Polyglot-fmyvkpnkrpxqzwdevhfphjtzbbrx/Build/Products/Debug-iphoneos/Polyglot.framework"; sourceTree = "<group>"; };
 		22F496C71BA3235D00EE5EBA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,13 +37,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22F496AE1BA3110600EE5EBA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -66,7 +45,6 @@
 			children = (
 				22F496C11BA311C300EE5EBA /* Polyglot.framework */,
 				22F4969E1BA3110600EE5EBA /* Source */,
-				22F496B41BA3110600EE5EBA /* Tests */,
 				22F4969D1BA3110600EE5EBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				22F4969C1BA3110600EE5EBA /* Example iOS.app */,
-				22F496B11BA3110600EE5EBA /* Example iOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -102,23 +79,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		22F496B41BA3110600EE5EBA /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				22F496B71BA3110600EE5EBA /* Polyglot_Example_iOSTests.swift */,
-				22F496B51BA3110600EE5EBA /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		22F496B51BA3110600EE5EBA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				22F496B61BA3110600EE5EBA /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,24 +99,6 @@
 			productReference = 22F4969C1BA3110600EE5EBA /* Example iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		22F496B01BA3110600EE5EBA /* Example iOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22F496BE1BA3110600EE5EBA /* Build configuration list for PBXNativeTarget "Example iOSTests" */;
-			buildPhases = (
-				22F496AD1BA3110600EE5EBA /* Sources */,
-				22F496AE1BA3110600EE5EBA /* Frameworks */,
-				22F496AF1BA3110600EE5EBA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				22F496B31BA3110600EE5EBA /* PBXTargetDependency */,
-			);
-			name = "Example iOSTests";
-			productName = "Polyglot Example iOSTests";
-			productReference = 22F496B11BA3110600EE5EBA /* Example iOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -169,10 +111,6 @@
 				TargetAttributes = {
 					22F4969B1BA3110600EE5EBA = {
 						CreatedOnToolsVersion = 6.4;
-					};
-					22F496B01BA3110600EE5EBA = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 22F4969B1BA3110600EE5EBA;
 					};
 				};
 			};
@@ -190,7 +128,6 @@
 			projectRoot = "";
 			targets = (
 				22F4969B1BA3110600EE5EBA /* Example iOS */,
-				22F496B01BA3110600EE5EBA /* Example iOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,13 +144,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22F496AF1BA3110600EE5EBA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -226,23 +156,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22F496AD1BA3110600EE5EBA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22F496B81BA3110600EE5EBA /* Polyglot_Example_iOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		22F496B31BA3110600EE5EBA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 22F4969B1BA3110600EE5EBA /* Example iOS */;
-			targetProxy = 22F496B21BA3110600EE5EBA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		22F496A51BA3110600EE5EBA /* Main.storyboard */ = {
@@ -372,42 +286,6 @@
 			};
 			name = Release;
 		};
-		22F496BF1BA3110600EE5EBA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "Example iOSTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example iOS.app/Example iOS";
-			};
-			name = Debug;
-		};
-		22F496C01BA3110600EE5EBA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "Example iOSTests";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example iOS.app/Example iOS";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -425,15 +303,6 @@
 			buildConfigurations = (
 				22F496BC1BA3110600EE5EBA /* Debug */,
 				22F496BD1BA3110600EE5EBA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		22F496BE1BA3110600EE5EBA /* Build configuration list for PBXNativeTarget "Example iOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22F496BF1BA3110600EE5EBA /* Debug */,
-				22F496C01BA3110600EE5EBA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
