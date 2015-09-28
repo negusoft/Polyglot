@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2237DC371BB9773B005BB873 /* NSTextFieldCell+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237DC361BB9773B005BB873 /* NSTextFieldCell+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
+		2237DC391BB97A66005BB873 /* NSMenu+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237DC381BB97A66005BB873 /* NSMenu+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
+		2237DC3B1BB98218005BB873 /* NSMenuItem+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2237DC3A1BB98218005BB873 /* NSMenuItem+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 		224D58EB1BAC36B80040B007 /* UISearchBar+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224D58EA1BAC36B80040B007 /* UISearchBar+Polyglot.swift */; settings = {ASSET_TAGS = (); }; };
 		225FD6941BA98D86006AAF6F /* UITextView+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225FD6931BA98D86006AAF6F /* UITextView+Polyglot.swift */; };
 		22E71C361BA80657000B39D3 /* UIButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E71C351BA80657000B39D3 /* UIButton+Polyglot.swift */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		2237DC361BB9773B005BB873 /* NSTextFieldCell+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTextFieldCell+Polyglot.swift"; sourceTree = "<group>"; };
+		2237DC381BB97A66005BB873 /* NSMenu+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMenu+Polyglot.swift"; sourceTree = "<group>"; };
+		2237DC3A1BB98218005BB873 /* NSMenuItem+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSMenuItem+Polyglot.swift"; sourceTree = "<group>"; };
 		224D58EA1BAC36B80040B007 /* UISearchBar+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISearchBar+Polyglot.swift"; sourceTree = "<group>"; };
 		225FD6931BA98D86006AAF6F /* UITextView+Polyglot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Polyglot.swift"; sourceTree = "<group>"; };
 		22C288761BA2D4590004AED4 /* Polyglot.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Polyglot.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +108,8 @@
 				88A4AD041BB699640030C15C /* NSSegmentedControl+Polyglot.swift */,
 				88A4AD061BB6A14B0030C15C /* NSFormCell+Polyglot.swift */,
 				88A4AD081BB6A7570030C15C /* NSTableColumn+Polyglot.swift */,
+				2237DC381BB97A66005BB873 /* NSMenu+Polyglot.swift */,
+				2237DC3A1BB98218005BB873 /* NSMenuItem+Polyglot.swift */,
 				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
 			);
 			path = Source;
@@ -249,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A4AD071BB6A14B0030C15C /* NSFormCell+Polyglot.swift in Sources */,
+				2237DC391BB97A66005BB873 /* NSMenu+Polyglot.swift in Sources */,
 				88A4AD031BB490850030C15C /* NSComboBox+Polyglot.swift in Sources */,
 				8861BEAF1BAD63850067DECF /* NSTextField+Polyglot.swift in Sources */,
 				88A4AD091BB6A7570030C15C /* NSTableColumn+Polyglot.swift in Sources */,
@@ -256,6 +263,7 @@
 				88A4AD051BB699640030C15C /* NSSegmentedControl+Polyglot.swift in Sources */,
 				88A4AD011BB48EC90030C15C /* NSTabViewItem+Polyglot.swift in Sources */,
 				88490D5D1BAEE20E00469D4B /* NSButton+Polyglot.swift in Sources */,
+				2237DC3B1BB98218005BB873 /* NSMenuItem+Polyglot.swift in Sources */,
 				2237DC371BB9773B005BB873 /* NSTextFieldCell+Polyglot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

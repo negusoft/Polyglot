@@ -38,3 +38,10 @@
 
 "table_column_title_1" = "Column 1";
 "table_column_title_2" = "Column 2";
+
+"menu_item_about" = "About Polyglot";
+"menu_submenu" = "Submenu";
+"menu_item_submenu" = "Submenu item";
+"menu_item_quit" = "Quit Polyglot";
+"menu_help" = "Help";
+"menu_item_help" = "Polyglot Help";
