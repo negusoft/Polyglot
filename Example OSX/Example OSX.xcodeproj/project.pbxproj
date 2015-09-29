@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8861BE9C1BAD5EF90067DECF /* Example OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example OSX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8861BE9C1BAD5EF90067DECF /* Polyglot Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Polyglot Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8861BE9F1BAD5EF90067DECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8861BEA11BAD5EF90067DECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8861BEA31BAD5EF90067DECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		8861BE9D1BAD5EF90067DECF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8861BE9C1BAD5EF90067DECF /* Example OSX.app */,
+				8861BE9C1BAD5EF90067DECF /* Polyglot Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,7 +85,7 @@
 			);
 			name = "Example OSX";
 			productName = "Example OSX";
-			productReference = 8861BE9C1BAD5EF90067DECF /* Example OSX.app */;
+			productReference = 8861BE9C1BAD5EF90067DECF /* Polyglot Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -245,8 +245,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.Example-OSX";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.Polyglot-OSX";
+				PRODUCT_NAME = "Polyglot Example";
 			};
 			name = Debug;
 		};
@@ -257,8 +257,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.Example-OSX";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.Polyglot-OSX";
+				PRODUCT_NAME = "Polyglot Example";
 			};
 			name = Release;
 		};
