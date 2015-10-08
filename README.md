@@ -28,7 +28,7 @@ Then add Polyglot pod to your podfile. This is an example of a podfile for an iO
 platform :ios, '8.0'
 use_frameworks!
 
-pod 'Polyglot'
+pod 'PolyglotLocalization'
 ```
 
 Notice the _use_frameworks!_ line, it is important that you include it. Note also that the minimum platform versions needs to be respected as specified in the Requirements above.
