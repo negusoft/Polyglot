@@ -36,7 +36,13 @@ public extension NSTextField {
     var placeholderKey: String {
         get { return "" }
         set {
-            self.placeholderString = NSLocalizedString(newValue, comment:newValue)
+            if #available(OSX 10.10, *) {
+                self.placeholderString = NSLocalizedString(newValue, comment:newValue)
+            } else {
+                if let cell = self.cell as? NSTextFieldCell {
+                    cell.placeholderString = NSLocalizedString(newValue, comment:newValue)
+                }
+            }
         }
     }
 }
