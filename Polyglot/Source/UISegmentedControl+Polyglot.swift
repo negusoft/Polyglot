@@ -31,17 +31,17 @@ public extension UISegmentedControl {
     var titleKeysCSV: String {
         get { return "" }
         set {
-            let keys = newValue.componentsSeparatedByCharactersInSet(NSCharacterSet(charactersInString: ","))
-            let spaceCharacterSet = NSCharacterSet(charactersInString: " ")
+            let keys = newValue.components(separatedBy: CharacterSet(charactersIn: ","))
+            let spaceCharacterSet = CharacterSet(charactersIn: " ")
             
             for index in 0..<self.numberOfSegments {
                 if index >= keys.count {
                     break
                 }
-                let key = keys[index].stringByTrimmingCharactersInSet(spaceCharacterSet)
+                let key = keys[index].trimmingCharacters(in: spaceCharacterSet)
                 if (!key.isEmpty) {
                     let title = NSLocalizedString(key, comment:key)
-                    self.setTitle(title, forSegmentAtIndex: index)
+                    self.setTitle(title, forSegmentAt: index)
                 }
             }
         }

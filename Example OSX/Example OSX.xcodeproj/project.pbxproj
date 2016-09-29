@@ -11,8 +11,8 @@
 		8861BEA21BAD5EF90067DECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861BEA11BAD5EF90067DECF /* ViewController.swift */; };
 		8861BEA41BAD5EF90067DECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8861BEA31BAD5EF90067DECF /* Assets.xcassets */; };
 		8861BEA71BAD5EF90067DECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8861BEA51BAD5EF90067DECF /* Main.storyboard */; };
-		8861BEB11BAD63E00067DECF /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8861BEB01BAD63E00067DECF /* Polyglot.framework */; };
-		8861BEB31BAD64BE0067DECF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8861BEB21BAD64BE0067DECF /* Localizable.strings */; settings = {ASSET_TAGS = (); }; };
+		8861BEB31BAD64BE0067DECF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8861BEB21BAD64BE0067DECF /* Localizable.strings */; };
+		88C9D3E51D9CAE130096EF1E /* Polyglot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C9D3E41D9CAE130096EF1E /* Polyglot.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +22,8 @@
 		8861BEA31BAD5EF90067DECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8861BEA61BAD5EF90067DECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8861BEA81BAD5EF90067DECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8861BEB01BAD63E00067DECF /* Polyglot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Polyglot.framework; path = ../Polyglot/build/Debug/Polyglot.framework; sourceTree = "<group>"; };
 		8861BEB21BAD64BE0067DECF /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		88C9D3E41D9CAE130096EF1E /* Polyglot.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Polyglot.framework; path = "../../../Library/Developer/Xcode/DerivedData/Polyglot-emifmlotymflpiaunmfguwudjbcl/Build/Products/Debug/Polyglot.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,7 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8861BEB11BAD63E00067DECF /* Polyglot.framework in Frameworks */,
+				88C9D3E51D9CAE130096EF1E /* Polyglot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,9 +41,9 @@
 		8861BE931BAD5EF90067DECF = {
 			isa = PBXGroup;
 			children = (
-				8861BEB01BAD63E00067DECF /* Polyglot.framework */,
 				8861BE9E1BAD5EF90067DECF /* Source */,
 				8861BE9D1BAD5EF90067DECF /* Products */,
+				88C9D3E31D9CAE130096EF1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +66,14 @@
 				8861BEB21BAD64BE0067DECF /* Localizable.strings */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		88C9D3E31D9CAE130096EF1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88C9D3E41D9CAE130096EF1E /* Polyglot.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,11 +103,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "NEGU Soft";
 				TargetAttributes = {
 					8861BE9B1BAD5EF90067DECF = {
 						CreatedOnToolsVersion = 7.0;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -171,8 +180,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -215,8 +226,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -235,6 +248,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
@@ -247,6 +261,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.Polyglot-OSX";
 				PRODUCT_NAME = "Polyglot Example";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -259,6 +274,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.negusoft.Polyglot-OSX";
 				PRODUCT_NAME = "Polyglot Example";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -31,7 +31,7 @@ public extension NSComboBox {
     var titleKeysCSV: String {
         get { return "" }
         set {
-            let keys = newValue.componentsSeparatedByCharactersInSet(NSCharacterSet(charactersInString: ","))
+            let keys = newValue.components(separatedBy: CharacterSet(charactersIn: ","))
 
             var items = [AnyObject]()
             for index in 0..<self.numberOfItems {
@@ -40,24 +40,24 @@ public extension NSComboBox {
             }
 
             self.removeAllItems()
-            self.addItemsWithObjectValues(items)
+            self.addItems(withObjectValues: items)
         }
     }
 
-    private func localizedItemForKeys(keys: [String], atIndex index: Int) -> AnyObject {
+    fileprivate func localizedItemForKeys(_ keys: [String], atIndex index: Int) -> AnyObject {
         if index >= keys.count {
-            return self.itemObjectValueAtIndex(index)
+            return self.itemObjectValue(at: index) as AnyObject
         }
 
-        let spaceCharacterSet = NSCharacterSet(charactersInString: " ")
-        let key = keys[index].stringByTrimmingCharactersInSet(spaceCharacterSet)
-        let item = self.itemObjectValueAtIndex(index)
+        let spaceCharacterSet = CharacterSet(charactersIn: " ")
+        let key = keys[index].trimmingCharacters(in: spaceCharacterSet)
+        let item = self.itemObjectValue(at: index)
         if key.isEmpty {
-            return item
+            return item as AnyObject
         }
         if item is String {
-            return NSLocalizedString(key, comment:key)
+            return NSLocalizedString(key, comment:key) as AnyObject
         }
-        return item
+        return item as AnyObject
     }
 }

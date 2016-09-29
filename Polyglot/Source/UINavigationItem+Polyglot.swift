@@ -49,7 +49,7 @@ public extension UINavigationItem {
             } else {
                 self.backBarButtonItem = UIBarButtonItem(
                     title: NSLocalizedString(newValue, comment:newValue),
-                    style: UIBarButtonItemStyle.Plain,
+                    style: UIBarButtonItemStyle.plain,
                     target: nil,
                     action: nil
                 )
