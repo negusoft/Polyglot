@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'PolyglotLocalization'
-  s.version = '0.4.0'
+  s.version = '0.5.0'
   s.license = 'MIT'
   s.summary = 'Localize straight from the Storyboard/XIB'
   s.homepage = 'https://github.com/negusoft/polyglot'
