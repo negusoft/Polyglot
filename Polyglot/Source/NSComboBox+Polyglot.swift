@@ -56,7 +56,7 @@ public extension NSComboBox {
             return item as AnyObject
         }
         if item is String {
-            return NSLocalizedString(key, comment:key) as AnyObject
+            return LocalizedString(key, comment:key) as AnyObject
         }
         return item as AnyObject
     }

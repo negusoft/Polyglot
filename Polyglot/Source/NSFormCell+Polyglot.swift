@@ -28,7 +28,7 @@ public extension NSFormCell {
     var titleKey: String {
         get { return "" }
         set {
-            self.title = NSLocalizedString(newValue, comment:newValue)
+            self.title = LocalizedString(newValue, comment:newValue)
         }
     }
 
@@ -36,7 +36,7 @@ public extension NSFormCell {
     var stringValueKey: String {
         get { return "" }
         set {
-            self.stringValue = NSLocalizedString(newValue, comment:newValue)
+            self.stringValue = LocalizedString(newValue, comment:newValue)
         }
     }
 
@@ -44,7 +44,7 @@ public extension NSFormCell {
     var placeholderKey: String {
         get { return "" }
         set {
-            self.placeholderString = NSLocalizedString(newValue, comment:newValue)
+            self.placeholderString = LocalizedString(newValue, comment:newValue)
         }
     }
 }

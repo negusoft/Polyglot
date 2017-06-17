@@ -28,7 +28,7 @@ public extension UITextField {
     var textKey: String {
         get { return "" }
         set {
-            self.text = NSLocalizedString(newValue, comment:newValue)
+            self.text = LocalizedString(newValue, comment:newValue)
         }
     }
     
@@ -36,7 +36,7 @@ public extension UITextField {
     var placeholderKey: String {
         get { return "" }
         set {
-            self.placeholder = NSLocalizedString(newValue, comment:newValue)
+            self.placeholder = LocalizedString(newValue, comment:newValue)
         }
     }
 }

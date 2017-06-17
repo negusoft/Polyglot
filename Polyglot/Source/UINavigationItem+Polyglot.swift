@@ -28,7 +28,7 @@ public extension UINavigationItem {
     var titleKey: String {
         get { return "" }
         set {
-            self.title = NSLocalizedString(newValue, comment:newValue)
+            self.title = LocalizedString(newValue, comment:newValue)
         }
     }
     
@@ -36,7 +36,7 @@ public extension UINavigationItem {
     var promptKey: String {
         get { return "" }
         set {
-            self.prompt = NSLocalizedString(newValue, comment:newValue)
+            self.prompt = LocalizedString(newValue, comment:newValue)
         }
     }
     
@@ -45,10 +45,10 @@ public extension UINavigationItem {
         get { return "" }
         set {
             if let backBarButtonItem = self.backBarButtonItem {
-                backBarButtonItem.title = NSLocalizedString(newValue, comment:newValue)
+                backBarButtonItem.title = LocalizedString(newValue, comment:newValue)
             } else {
                 self.backBarButtonItem = UIBarButtonItem(
-                    title: NSLocalizedString(newValue, comment:newValue),
+                    title: LocalizedString(newValue, comment:newValue),
                     style: UIBarButtonItemStyle.plain,
                     target: nil,
                     action: nil
