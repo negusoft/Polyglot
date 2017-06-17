@@ -18,6 +18,7 @@
 		22E990441BAAF9E40084D941 /* UIBarItem+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E990431BAAF9E40084D941 /* UIBarItem+Polyglot.swift */; };
 		22E990461BAB13820084D941 /* UINavigationItem+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E990451BAB13820084D941 /* UINavigationItem+Polyglot.swift */; };
 		22F496C41BA3195A00EE5EBA /* UILabel+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F496C31BA3195A00EE5EBA /* UILabel+Polyglot.swift */; };
+		49D53F791ED71FAB00C99548 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D53F781ED71FAB00C99548 /* Helpers.swift */; };
 		88490D591BAEDCF500469D4B /* NSViewController+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88490D581BAEDCF500469D4B /* NSViewController+Polyglot.swift */; };
 		88490D5D1BAEE20E00469D4B /* NSButton+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88490D5C1BAEE20E00469D4B /* NSButton+Polyglot.swift */; };
 		8861BEAF1BAD63850067DECF /* NSTextField+Polyglot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8861BEAE1BAD63850067DECF /* NSTextField+Polyglot.swift */; };
@@ -110,6 +111,7 @@
 				88A4AD081BB6A7570030C15C /* NSTableColumn+Polyglot.swift */,
 				2237DC381BB97A66005BB873 /* NSMenu+Polyglot.swift */,
 				2237DC3A1BB98218005BB873 /* NSMenuItem+Polyglot.swift */,
+				49D53F781ED71FAB00C99548 /* Helpers.swift */,
 				22C2884E1BA2D01C0004AED4 /* Supporting Files */,
 			);
 			path = Source;
@@ -242,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				22F496C41BA3195A00EE5EBA /* UILabel+Polyglot.swift in Sources */,
+				49D53F791ED71FAB00C99548 /* Helpers.swift in Sources */,
 				22E990461BAB13820084D941 /* UINavigationItem+Polyglot.swift in Sources */,
 				22E71C3A1BA815AF000B39D3 /* UITextField+Polyglot.swift in Sources */,
 				224D58EB1BAC36B80040B007 /* UISearchBar+Polyglot.swift in Sources */,
