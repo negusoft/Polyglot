@@ -68,6 +68,18 @@ The properties that can be localized with Polyglot are named as the original pro
 
 This way, it is easy to recognize what properties will be localized in each case.
 
+### Table-based keys
+
+_NSLocalizedString()_ has a _tableName_ attribute that allows using a specific '.strings file'. Polyglot provides the following format in order to specify the table name:
+```
+[table_name].string_key
+```
+
+So if you want to use the 'field_title' key from the 'Common.strings' file, you can set the following in Interface Builder:
+```
+[Common].field_title
+```
+
 ### CSV Properties
 
 When a list of elements needs to be localized, the keys are specified in CSV (Comma Separated Values). This is the case for _segmented controls_ for example. The corresponding properties are named accordingly: _Title KeysCSV_.
