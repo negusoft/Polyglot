@@ -28,7 +28,7 @@ public extension UIButton {
     var defaultTitleKey: String {
         get { return "" }
         set {
-            self.setTitle(NSLocalizedString(newValue, comment:newValue), for: UIControlState())
+            self.setTitle(LocalizedString(newValue, comment:newValue), for: UIControlState())
         }
     }
 
@@ -36,7 +36,7 @@ public extension UIButton {
     var highLightedTitleKey: String {
         get { return "" }
         set {
-            self.setTitle(NSLocalizedString(newValue, comment:newValue), for: .highlighted)
+            self.setTitle(LocalizedString(newValue, comment:newValue), for: .highlighted)
         }
     }
 
@@ -44,7 +44,7 @@ public extension UIButton {
     var selectedTitleKey: String {
         get { return "" }
         set {
-            self.setTitle(NSLocalizedString(newValue, comment:newValue), for: .selected)
+            self.setTitle(LocalizedString(newValue, comment:newValue), for: .selected)
         }
     }
 
@@ -52,7 +52,7 @@ public extension UIButton {
     var disabledTitleKey: String {
         get { return "" }
         set {
-            self.setTitle(NSLocalizedString(newValue, comment:newValue), for: .disabled)
+            self.setTitle(LocalizedString(newValue, comment:newValue), for: .disabled)
         }
     }
 }

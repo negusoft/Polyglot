@@ -28,7 +28,7 @@ public extension NSMenu {
     var titleKey: String {
         get { return "" }
         set {
-            self.title = NSLocalizedString(newValue, comment:newValue)
+            self.title = LocalizedString(newValue, comment:newValue)
         }
     }
 }

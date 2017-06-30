@@ -28,7 +28,7 @@ public extension UISearchBar {
     var textKey: String {
         get { return "" }
         set {
-            self.text = NSLocalizedString(newValue, comment:newValue)
+            self.text = LocalizedString(newValue, comment:newValue)
         }
     }
     
@@ -36,7 +36,7 @@ public extension UISearchBar {
     var placeholderKey: String {
         get { return "" }
         set {
-            self.placeholder = NSLocalizedString(newValue, comment:newValue)
+            self.placeholder = LocalizedString(newValue, comment:newValue)
         }
     }
     
@@ -44,7 +44,7 @@ public extension UISearchBar {
     var promptKey: String {
         get { return "" }
         set {
-            self.prompt = NSLocalizedString(newValue, comment:newValue)
+            self.prompt = LocalizedString(newValue, comment:newValue)
         }
     }
 }

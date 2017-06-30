@@ -40,7 +40,7 @@ public extension NSSegmentedControl {
                 }
                 let key = keys[index].trimmingCharacters(in: spaceCharacterSet)
                 if (!key.isEmpty) {
-                    let label = NSLocalizedString(key, comment:key)
+                    let label = LocalizedString(key, comment:key)
                     self.setLabel(label, forSegment: index)
                 }
             }

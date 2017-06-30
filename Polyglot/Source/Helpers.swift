@@ -19,16 +19,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-import UIKit
+import Foundation
 
-@IBDesignable
-public extension UITextView {
-    
-    @IBInspectable
-    var textKey: String {
-        get { return "" }
-        set {
-            self.text = LocalizedString(newValue, comment:newValue)
-        }
+private let tableNameDelimiters = (start: Character("["), end: "].")
+
+func LocalizedString(_ key: String, comment: String) -> String {
+    if let open = key.characters.first, open == tableNameDelimiters.start, let close = key.range(of: tableNameDelimiters.end) {
+        return NSLocalizedString(key[close.upperBound..<key.endIndex],
+                                 tableName: key[key.index(key.startIndex, offsetBy: 1)..<close.lowerBound],
+                                 comment: comment)
+    } else {
+        return NSLocalizedString(key, comment: comment)
     }
 }
