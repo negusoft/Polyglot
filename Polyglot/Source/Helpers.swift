@@ -25,8 +25,8 @@ private let tableNameDelimiters = (start: Character("["), end: "].")
 
 func LocalizedString(_ key: String, comment: String) -> String {
     if let open = key.characters.first, open == tableNameDelimiters.start, let close = key.range(of: tableNameDelimiters.end) {
-        return NSLocalizedString(key[close.upperBound..<key.endIndex],
-                                 tableName: key[key.index(key.startIndex, offsetBy: 1)..<close.lowerBound],
+        return NSLocalizedString(String(key[close.upperBound..<key.endIndex]),
+                                 tableName: String(key[key.index(key.startIndex, offsetBy: 1)..<close.lowerBound]),
                                  comment: comment)
     } else {
         return NSLocalizedString(key, comment: comment)
