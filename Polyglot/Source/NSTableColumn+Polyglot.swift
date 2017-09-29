@@ -28,7 +28,7 @@ public extension NSTableColumn {
     var titleKey: String {
         get { return "" }
         set {
-            self.title = LocalizedString(newValue, comment:newValue)
+            self.title = Polyglot.localizedString(newValue)
         }
     }
 }

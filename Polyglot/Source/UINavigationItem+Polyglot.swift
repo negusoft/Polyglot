@@ -28,7 +28,7 @@ public extension UINavigationItem {
     var titleKey: String {
         get { return "" }
         set {
-            self.title = LocalizedString(newValue, comment:newValue)
+            self.title = Polyglot.localizedString(newValue)
         }
     }
     
@@ -36,7 +36,7 @@ public extension UINavigationItem {
     var promptKey: String {
         get { return "" }
         set {
-            self.prompt = LocalizedString(newValue, comment:newValue)
+            self.prompt = Polyglot.localizedString(newValue)
         }
     }
     
@@ -45,10 +45,10 @@ public extension UINavigationItem {
         get { return "" }
         set {
             if let backBarButtonItem = self.backBarButtonItem {
-                backBarButtonItem.title = LocalizedString(newValue, comment:newValue)
+                backBarButtonItem.title = Polyglot.localizedString(newValue)
             } else {
                 self.backBarButtonItem = UIBarButtonItem(
-                    title: LocalizedString(newValue, comment:newValue),
+                    title: Polyglot.localizedString(newValue),
                     style: UIBarButtonItemStyle.plain,
                     target: nil,
                     action: nil

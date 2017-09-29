@@ -40,7 +40,7 @@ public extension UISegmentedControl {
                 }
                 let key = keys[index].trimmingCharacters(in: spaceCharacterSet)
                 if (!key.isEmpty) {
-                    let title = LocalizedString(key, comment:key)
+                    let title = Polyglot.localizedString(key)
                     self.setTitle(title, forSegmentAt: index)
                 }
             }

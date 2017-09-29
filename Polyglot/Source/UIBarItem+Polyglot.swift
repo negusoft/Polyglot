@@ -30,7 +30,7 @@ public extension UIBarItem {
         set {
             // Disable animations, it might be visible in some situations otherwise
             UIView.setAnimationsEnabled(false)
-            self.title = LocalizedString(newValue, comment:newValue)
+            self.title = Polyglot.localizedString(newValue)
             UIView.setAnimationsEnabled(true)
         }
     }

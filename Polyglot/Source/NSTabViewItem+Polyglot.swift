@@ -28,7 +28,7 @@ public extension NSTabViewItem {
     var labelKey: String {
         get { return "" }
         set {
-            self.label = LocalizedString(newValue, comment:newValue)
+            self.label = Polyglot.localizedString(newValue)
         }
     }
 }

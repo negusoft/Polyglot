@@ -28,7 +28,7 @@ public extension UITextView {
     var textKey: String {
         get { return "" }
         set {
-            self.text = LocalizedString(newValue, comment:newValue)
+            self.text = Polyglot.localizedString(newValue)
         }
     }
 }

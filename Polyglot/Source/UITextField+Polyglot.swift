@@ -28,7 +28,7 @@ public extension UITextField {
     var textKey: String {
         get { return "" }
         set {
-            self.text = LocalizedString(newValue, comment:newValue)
+            self.text = Polyglot.localizedString(newValue)
         }
     }
     
@@ -36,7 +36,7 @@ public extension UITextField {
     var placeholderKey: String {
         get { return "" }
         set {
-            self.placeholder = LocalizedString(newValue, comment:newValue)
+            self.placeholder = Polyglot.localizedString(newValue)
         }
     }
 }

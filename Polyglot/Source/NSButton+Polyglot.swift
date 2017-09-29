@@ -28,7 +28,7 @@ public extension NSButton {
     var titleKey: String {
         get { return "" }
         set {
-            self.title = LocalizedString(newValue, comment:newValue)
+            self.title = Polyglot.localizedString(newValue)
         }
     }
 
@@ -36,7 +36,7 @@ public extension NSButton {
     var alternateTitleKey: String {
         get { return "" }
         set {
-            self.alternateTitle = LocalizedString(newValue, comment:newValue)
+            self.alternateTitle = Polyglot.localizedString(newValue)
         }
     }
 }

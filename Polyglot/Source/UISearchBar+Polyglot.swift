@@ -28,7 +28,7 @@ public extension UISearchBar {
     var textKey: String {
         get { return "" }
         set {
-            self.text = LocalizedString(newValue, comment:newValue)
+            self.text = Polyglot.localizedString(newValue)
         }
     }
     
@@ -36,7 +36,7 @@ public extension UISearchBar {
     var placeholderKey: String {
         get { return "" }
         set {
-            self.placeholder = LocalizedString(newValue, comment:newValue)
+            self.placeholder = Polyglot.localizedString(newValue)
         }
     }
     
@@ -44,7 +44,7 @@ public extension UISearchBar {
     var promptKey: String {
         get { return "" }
         set {
-            self.prompt = LocalizedString(newValue, comment:newValue)
+            self.prompt = Polyglot.localizedString(newValue)
         }
     }
 }

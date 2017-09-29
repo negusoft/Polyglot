@@ -28,7 +28,7 @@ public extension NSTextField {
     var titleKey: String {
         get { return "" }
         set {
-            self.stringValue = LocalizedString(newValue, comment:newValue)
+            self.stringValue = Polyglot.localizedString(newValue)
         }
     }
 
@@ -37,10 +37,10 @@ public extension NSTextField {
         get { return "" }
         set {
             if #available(OSX 10.10, *) {
-                self.placeholderString = LocalizedString(newValue, comment:newValue)
+                self.placeholderString = Polyglot.localizedString(newValue)
             } else {
                 if let cell = self.cell as? NSTextFieldCell {
-                    cell.placeholderString = LocalizedString(newValue, comment:newValue)
+                    cell.placeholderString = Polyglot.localizedString(newValue)
                 }
             }
         }
