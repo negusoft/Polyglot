@@ -2,6 +2,7 @@
 
 It provides extensions to common UI elements to set the localized text in Interface Builder. For instance, a UILabel will display a _"Text Key"_ property. When a value is set, Polyglot will call NSLocalizedString using the given value and set it to the label's text property.
 
+
 ## Why Polyglot?
 
 There are already several ways to internationalize the UI:
@@ -11,10 +12,12 @@ There are already several ways to internationalize the UI:
 
 **Polyglot** doesn't try to replace these tools, but provide a complementary approach to the localization process. It is a clean and simple solution compared to creating outlets. It is also easy to maintain, while keeping control of the _strings file_.
 
+
 ## Requirements
 
 - iOS 8.0+ / Mac OS X 10.9+
 - Xcode 7.0+
+
 
 ## Setup
 
@@ -39,11 +42,13 @@ Finally, don't forget to update your pods and open the generated _xcworkspace_ f
 $ pod install
 ```
 
+
 ### Other
 
 There are other ways to include Polyglot in your project. Polyglot is a set of extensions written in Swift so you may as well copy the files to your project (not recommended), or add the project as a dependency...
 
 Just note that the project can not be included as a _static library_ since Interface Builder will not recognize the _inspectable_ properties in that case.
+
 
 ## Usage
 
@@ -58,6 +63,7 @@ Now you will have to add the corresponding value to the _Localizable.strings_ fi
 
 You can now run the app and the label should display _Hello World_.
 
+
 ### Property naming
 
 The properties that can be localized with Polyglot are named as the original properties followed by _key_:
@@ -67,6 +73,7 @@ The properties that can be localized with Polyglot are named as the original pro
 - Placeholder -> Placeholder Key
 
 This way, it is easy to recognize what properties will be localized in each case.
+
 
 ### Table-based keys
 
@@ -79,6 +86,7 @@ So if you want to use the 'field_title' key from the 'Common.strings' file, you 
 ```
 [Common].field_title
 ```
+
 
 ### CSV Properties
 
@@ -96,11 +104,45 @@ In case there were more than three segments, the reset would not be modified. Th
 segment_one, , segment_three
 ```
 
+
 ### UIButton
 
 UIButton allows setting a title text for each state. In response to this, Polyglot provides one property for each state: default, highlighted, selected and disabled.
 
 If we just need to assign one title for all states, we will only assign _Default Title Key_ and leave the rest empty.
+
+
+## Advanced
+
+### Custom key management
+
+Polyglot allows you to configure how keys are handled. You need to modify the _Polyglot.localizer_ to set up your own implementation.
+
+By default, it parses the table and the key as specified above in "Table-based keys". This is implemented in the _TabledLocalizer_ class.
+
+Let's say we want to verify that every key is actually translated and throw a fatal error otherwise. We configure Polyglot like this:
+```swift
+        Polyglot.localizer = TabledLocalizer { key, tableName in
+            let result = NSLocalizedString(key, tableName: tableName, value: "{NOTFOUND}", comment: key)
+            if result == "{NOTFOUND}" {
+                fatalError("Poliglot: Key '\(key)' not found")
+            }
+            return result
+        }
+```
+
+We need to run this code when the app is launched, before the UI is loaded. For iOS, it will typically go in the _UIApplicationDelegate.application(application, didFinishLaunchingWithOptions)_ implementation. While for MacOS apps, you should override _awakeFromNib_ in your _NSApplicationDelegate_ and place the code there. 
+```swift
+    override func awakeFromNib() {
+        Polyglot.localizer = ...
+    }
+```
+
+And don't forget to import the module:
+```swift
+    import PolyglotLocalization
+```
+
 
 ## One More Thing...
 
