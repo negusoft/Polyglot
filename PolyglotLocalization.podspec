@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'PolyglotLocalization'
-  s.version = '0.6.0'
+  s.version = '0.7.0'
   s.license = 'MIT'
   s.summary = 'Localize straight from the Storyboard/XIB'
   s.homepage = 'https://github.com/negusoft/polyglot'
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.9'
 
-  s.source_files     = 'Polyglot/Source/Helpers.swift'
+  s.source_files     = 'Polyglot/Source/Polyglot.swift'
   s.ios.source_files = 'Polyglot/Source/UI*.swift'
   s.osx.source_files = 'Polyglot/Source/NS*.swift'
 
