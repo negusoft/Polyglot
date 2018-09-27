@@ -28,7 +28,7 @@ public extension UIButton {
     var defaultTitleKey: String {
         get { return "" }
         set {
-            self.setTitle(Polyglot.localizedString(newValue), for: UIControlState())
+            self.setTitle(Polyglot.localizedString(newValue), for: UIControl.State())
         }
     }
 

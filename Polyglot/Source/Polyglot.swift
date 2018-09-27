@@ -58,7 +58,7 @@ public class TabledLocalizer : Localizer {
 
     public func localizeString(_ key: String) -> String {
         // If the key conforms to the "[TABLE]KEY" format -> use table based localization
-        if let open = key.characters.first, open == TabledLocalizer.tableNameDelimiters.start, let close = key.range(of: TabledLocalizer.tableNameDelimiters.end) {
+        if let open = key.first, open == TabledLocalizer.tableNameDelimiters.start, let close = key.range(of: TabledLocalizer.tableNameDelimiters.end) {
             return localizeFunc(
                 String(key[close.upperBound..<key.endIndex]),
                 String(key[key.index(key.startIndex, offsetBy: 1)..<close.lowerBound])

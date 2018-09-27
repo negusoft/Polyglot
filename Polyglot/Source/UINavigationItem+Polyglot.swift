@@ -49,7 +49,7 @@ public extension UINavigationItem {
             } else {
                 self.backBarButtonItem = UIBarButtonItem(
                     title: Polyglot.localizedString(newValue),
-                    style: UIBarButtonItemStyle.plain,
+                    style: UIBarButtonItem.Style.plain,
                     target: nil,
                     action: nil
                 )
